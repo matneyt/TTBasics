@@ -2,7 +2,7 @@ html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif;}
 .w3-sidebar {
   z-index: 3;
   width: 250px;
-  top: 107px;
+  top: 106px;
   bottom: 0;
   height: inherit;
 }
@@ -13,4 +13,9 @@ html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif;}
 
 .w3-main {
 	margin-top: 36px;
+}
+
+.w3-hover-indigo:focus {
+	color: #fff!important;
+	background-color:#3f51b5!important;
 }
