@@ -19,3 +19,8 @@ html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif;}
 	color: #fff!important;
 	background-color:#3f51b5!important;
 }
+
+.w3-indigo:focus {
+	color: #000000!important;
+	background-color: #e0e0eb!important;
+}
