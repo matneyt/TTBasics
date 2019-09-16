@@ -30,6 +30,16 @@ html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif;}
 	height:auto;
 }
 
+.v4-table {
+	border-collapse: separate;
+	border-spacing: 5px;
+}
+
+.v4-table th, .v4-table td {
+	text-align:left;
+	padding: 5px;
+	vertical-align: top;
+}
 
 /*
  * Style for "Skip to Content" links.  Should have an href linked to 
