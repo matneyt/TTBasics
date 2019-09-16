@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-<title>Benefits of the New Trusted Tester Process</title>
+<title>Keyboard Testing</title>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="w3-modified.css">
@@ -24,8 +24,8 @@
     <i class="fa fa-remove"></i>
   </a>
   <h4 class="w3-bar-item"><b>Menu</b></h4>
-  <a class="w3-bar-item w3-button w3-indigo" href="index.html">Introduction</a>
-  <a class="w3-bar-item w3-button w3-hover-indigo" href="2keyboard_1keyboard.html">Keyboard</a>
+  <a class="w3-bar-item w3-button w3-hover-indigo" href="index.html">Introduction</a>
+  <a class="w3-bar-item w3-button w3-indigo" href="2keyboard_1keyboard.html">Keyboard</a>
   <a class="w3-bar-item w3-button w3-hover-indigo" href="#">Link</a>
   <a class="w3-bar-item w3-button w3-hover-indigo" href="#">Link</a>
 </nav>
@@ -36,43 +36,56 @@
 <!-- Main content: shift it to the right by 250 pixels when the sidebar is visible -->
 <main id="main-content">
 <div class="w3-main" style="margin-left:250px; margin-top:36px;">
-	<div class="w3-row" style="padding-top: 64px">
-		<div class="w3-container w3-card w3-margin">
-		  <h1>Major benefits of the new process</h1>
-		  <ul>
-			<li>Use of ANDI takes guess work out of whether ARIA or HTML code is sufficient</li>
-			<li>Test conditions are phrased for binary responses (true/false) to allow use of automated testing tools where possible</li>
-		  </ul>
-		</div>
-	</div>
+
+  <div class="w3-row w3-padding-64">
+    <div class="w3-container w3-margin w3-card">
+		<h1>4.A, 2.1.1-keyboard-access</h1>
+	  <table class="w3-table w3-margin-bottom">
+		<thead>
+			<tr class="w3-indigo">
+				<th class="w3-border w3-border-white">Test Name</th>
+				<th class="w3-border w3-border-white">Test ID</th>
+				<th class="w3-border w3-border-white">Test Condition</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr class="w3-border">
+				<td><strong>2.1.1-keyboard-access</strong></td>
+				<td>4.A</td>
+				<td>All functionality can be access and executed using only the keyboard.</td>
+			</tr>
+		<tbody>
+	  </table>
+	  <h4>Evaluate Results:</h4>
+	  <p>If BOTH of the following are <strong>TRUE</strong>, the content <strong>PASSES</strong>:</p>
+	  <ol>
+		<li>All functionality can be accessed and executed using the keyboard,<br>AND</li>
+		<li>All essential information can be accessed via keyboard interaction OR the information is available elsewhere on the page.</li>
+	  </ol>
+    </div>
+  </div>
+
 	<div class="w3-row">
-		<div class="w3-container w3-card w3-margin">
-		  <h1>Overview of ANDI</h1>
-		  <p><a href="https://www.ssa.gov/accessibility/andi/help/howtouse.html">Accessible Name and Description Inspector (AND)</a> testing tool developed by the Social Security Administration.</p>
-		  <ul>
-			<li>focusable elements</li>
-			<li>graphics/images</li>
-			<li>graphics/images</li>
-			<li>links/buttons</li>
-			<li>structures</li>
-			<li>color contrast</li>
-			<li>hidden content</li>
-			<li>tables</li>
-			<li>iframes</li>
-			<li><img src="https://www.ssa.gov/accessibility/andi/icons/settings-on.png" alt="" class="w3-black"> Linearize page feature</li>
-		  </ul>
-		</div>
-	</div>
+    <div class="w3-margin w3-container w3-leftbar w3-border-blue w3-pale-blue">
+      <h2>Tips:</h2>
+      <ul>
+		<li>Focus on non-interactive elements is permitted.</li>
+		<li>Test any automatic changes resulting from interaction with the page.</li>
+		<li>Non-essential title/tooltip information is NOT required to have keyboard access.</li>
+	  </ul>
+    </div>
+  </div>
 
   <!-- Pagination -->
   <div class="w3-center w3-padding-32">
     <div class="w3-bar">
-		<a class="w3-button w3-hover-indigo" href="1intro_4hist.html"><i class="fa fa-angle-double-left" aria-label="back"></i></a>	
-		<a class="w3-button w3-hover-indigo" href="index.html">1</a>
-		<a class="w3-button w3-hover-indigo" href="#">2</a>
-		<a class="w3-button w3-hover-indigo" href="1intro_3evol.html">3</a>
-		<a class="w3-button w3-hover-indigo" href="1intro_4hist.html">4</a>
-		<a class="w3-button w3-indigo" href="#">5</a>
+		<a class="w3-button w3-hover-indigo" href="2keyboard_1keyboard.html"><i class="fa fa-angle-double-left" aria-label="back"></i></a>	
+		<a class="w3-button w3-hover-indigo" href="2keyboard_1keyboard.html">1</a>
+		<a class="w3-button w3-indigo" href="#">2</a>
+		<a class="w3-button w3-hover-indigo" href="#">3</a>
+		<a class="w3-button w3-hover-indigo" href="#">4</a>
+		<a class="w3-button w3-hover-indigo" href="#">5</a>
+		<a class="w3-button w3-hover-indigo" href="#">»</a>
     </div>
   </div>
 
