@@ -1,7 +1,24 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<title>5A and 5B</title>
+<title>5A-5C</title>
+<style>
+table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+td, th {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+}
+
+tr:nth-child(even) {
+  background-color: #dddddd;
+}
+</style>
 </head>
 <body>
 
@@ -30,7 +47,31 @@
 <li><label for="J5">Jibberish <input type="text" id="J5" name="J5"></li><br><br></ol>
 <input type="submit" value="Submit">
 </form>
+<br>
+<br>
 
-
+<table>
+  <tr>
+    <th scope="col">Company</th>
+    <th scope="col">Contact</th>
+    <th scope="col">Country</th>
+  </tr>
+  <tr>
+    <th scope="row"><label for="row-1"><input type="text" id="row-1" title="Input Company name" name="row-1"></th>
+    <td><label for="row-2"><input type="text" id="row-2" title="Input Contact name" name="row-2"></td>
+    <td><label for="row-3"><input type="text" id="row-3" title="Input location (country) of compnay" name="row-3"></td>
+  </tr>
+  <tr>
+    <th scope="row">Walmart</th>
+    <td>Bob Jones</td>
+    <td>Mexico</td>
+  </tr>
+  <tr>
+    <th scope="row">Ikea</th>
+    <td>Roland Smith</td>
+    <td>Sweden</td>
+  </tr>
+ 
+</table>
 
 </html>
