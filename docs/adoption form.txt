@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body {
+  font-family: Arial;
+  font-size: 17px;
+  padding: 8px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.row {
+  display: -ms-flexbox; /* IE10 */
+  display: flex;
+  -ms-flex-wrap: wrap; /* IE10 */
+  flex-wrap: wrap;
+  margin: 0 -16px;
+}
+
+.col-25 {
+  -ms-flex: 25%; /* IE10 */
+  flex: 25%;
+}
+
+.col-50 {
+  -ms-flex: 50%; /* IE10 */
+  flex: 50%;
+}
+
+.col-75 {
+  -ms-flex: 75%; /* IE10 */
+  flex: 75%;
+}
+
+.col-25,
+.col-50,
+.col-75 {
+  padding: 0 16px;
+}
+
+.container {
+  background-color: #f2f2f2;
+  padding: 5px 20px 15px 20px;
+  border: 1px solid lightgrey;
+  border-radius: 3px;
+}
+
+input[type=text] {
+  width: 100%;
+  margin-bottom: 20px;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+}
+
+label {
+  margin-bottom: 10px;
+  display: block;
+}
+
+.icon-container {
+  margin-bottom: 20px;
+  padding: 7px 0;
+  font-size: 24px;
+}
+
+.btn {
+  background-color: #4CAF50;
+  color: white;
+  padding: 12px;
+  margin: 10px 0;
+  border: none;
+  width: 100%;
+  border-radius: 3px;
+  cursor: pointer;
+  font-size: 17px;
+}
+
+.btn:hover {
+  background-color: #45a049;
+}
+
+a {
+  color: #2196F3;
+}
+
+hr {
+  border: 1px solid lightgrey;
+}
+
+span.price {
+  float: right;
+  color: grey;
+}
+
+/* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other (also change the direction - make the "cart" column go on top) */
+@media (max-width: 800px) {
+  .row {
+    flex-direction: column-reverse;
+  }
+  .col-25 {
+    margin-bottom: 20px;
+  }
+}
+</style>
+</head>
+<body>
+
+<h2>Form 1</h2>
+<p>If you are interested in adopting a pet, please complete the application below.</p>
+<div class="row">
+  <div class="col-75">
+    <div class="container">
+      <form action="/action_page.php">
+      
+       <div class="row">
+          <div class="col-50">
+            <h3>About you</h3>
+            <label for="fname"><i class="fa fa-user"></i> *Name:</label>
+            <input type="text" id="fname" name="firstname" placeholder="Enter First name, middle initial, and last name such as John M. Doe"  onfocus="this.placeholder=''" required>
+            <label for="pname"></i> *Name of the pet you want to adopt:</label>
+            <input type="text" id="pname" name="pname"  required>
+            <label for="phone">Best daytime phone number:</label>
+<input type="text" id="phone" name="phone"
+       pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required> </br>
+            <label for="email"><i class="fa fa-envelope"></i> *Email:</label>
+            <input type="text" id="email" name="email" placeholder="john@example.com"  onfocus="this.placeholder=''" required>
+            <h4>Is your residence a rental?:</h4>
+
+<script type="text/javascript">
+    function ShowHideDiv(Res2) {
+        var check = document.getElementById("check");
+        check.style.display = Res2.checked ? "block" : "none";
+    }
+</script>
+<label for="Res">
+  <input type="checkbox" name="a1" value="Yes" id="Res" onclick="myFunction()"> Yes!<br>
+ <label for="Res2"> <input type="checkbox" name="a2" id="Res2" value="No" onclick="ShowHideDiv(this)"> No. <br>
+ <hr />
+<div id="check">
+    Awesome! Continue filling out this adoption form!</div>
+
+  
+  <script>
+function myFunction() {
+  window.open("https://www.humanesociety.org/resources/information-renters-pets");
+}
+</script>
+
+
+<br>
+            <label for="adr"><i class="fa fa-address-card-o"></i> Home Street Address:</label>
+            <input type="text" id="adr" name="address" >
+            <label for="city"><i class="fa fa-institution"></i> City:</label>
+            <input type="text" id="city" name="city" >
+            <label for="state">State (e.x.NC):</label>
+                <input type="text" id="state" name="state">
+                <label for="zip">5-digit Zip Code:</label>
+                <input type="text" id="zip" name="zip" placeholder="10001">
+                <h4> There is an adoption form fee of $15.</h4>
+                </div>
+                </div>
+
+      
+          <fieldset>
+          <legend>
+            <h3>Billing Address</h3></legend>
+            <label>
+          <input type="checkbox" checked="checked" name="sameadr"> Shipping address same as billing
+        </label>
+            <label for="fname1"><i class="fa fa-user"></i> Full Name</label>
+            <input type="text" id="fname1" name="firstname" placeholder="John M. Doe">
+            <input type="text" id="email1" name="email" placeholder="john@example.com">
+            <label for="adr1"><i class="fa fa-address-card-o"></i> Address</label>
+            <input type="text" id="adr1" name="address" placeholder="542 W. 15th Street">
+            <label for="city1"><i class="fa fa-institution"></i> City</label>
+            <input type="text" id="city1" name="city" placeholder="New York"  onfocus="this.placeholder=''">
+
+            <div class="row">
+              <div class="col-50">
+                <label for="state1">State</label>
+                <input type="text" id="state1" name="state" placeholder="NY" onfocus="this.placeholder=''">
+              </div>
+              <div class="col-50">
+                <label for="zip1">Zip</label>
+                <input type="text" id="zip1" name="zip" placeholder="10001" onfocus="this.placeholder=''" >
+              </div>
+              </fieldset>
+            </div>
+          </div>
+
+          <div class="col-50">
+            <h2>Payment</h2>
+            <label for="fname">Accepted Cards:</label>
+            <div class="icon-container">
+              <i class="fa fa-cc-visa" style="color:navy;"></i>
+              <i class="fa fa-cc-amex" style="color:blue;"></i>
+              <i class="fa fa-cc-mastercard" style="color:red;"></i>
+              <i class="fa fa-cc-discover" style="color:orange;"></i>
+            </div>
+            <label for="cname">Name on Card:</label>
+            <input type="text" id="cname" name="cardname" placeholder="required" onfocus="this.placeholder=''" required>
+            <label for="ccnum">*Credit card number:</label>
+            <input type="text" id="ccnum" name="cardnumber" required>
+            <label for="expmonth">*Exp Month:</label>
+            <input type="text" id="expmonth" name="expmonth">
+            <div class="row">
+              <div class="col-50">
+                <label for="expyear">*Exp Year</label>
+                <input type="text" id="expyear" name="expyear" required>
+              </div>
+              <div class="col-50">
+                <label for="cvv">*CVV</label>
+                <input type="text" id="cvv" name="cvv" placeholder="352" required>
+              </div>
+            </div>
+          </div>
+          
+        </div>
+        
+        <input type="submit" value="Continue to checkout" class="btn">
+      </form>
+    </div>
+  </div>
+  <div class="col-25">
+    <div class="container">
+      <h3>Pet Adoption Cart <span class="price" style="color:black"><i class="fa fa-shopping-cart"></i> <b>1</b></span></h3>
+      <p><a href="#">Lily the cat</a> <span class="price">$15</span></p>
+  
+      <hr>
+      <p>Total <span class="price" style="color:black"><b>$15</b></span></p>
+    </div>
+  </div>
+</div>
+
+
+</body>
+</html>
