@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en" class="ANDI508-testPage"><head>
+<title> 5.D</title>
+
+  <link rel='stylesheet' href='https://www.w3schools.com/w3css/4/w3.css'>
+
+      <link rel="stylesheet" href="5D_Pass3.css">
+
+  
+</head>
+
+<body>
+
+<br>
+<div>
+Enter your full legal name: <input type="text" id="fname1" title="Enter your first and last name" onblur="myFunction()" class="ANDI508-element ANDI508-highlight" data-andi508-index="1">
+
+<script>
+function myFunction() {
+    window.open("https://en.wikipedia.org/wiki/Orange_(fruit)");
+}
+</script>
+</div>
+<br>
+<br>
+<div>
+
+<p id="wikiwarn" class="ANDI508-relatedLaserTarget" data-andi508-relatedlaserindex="1">When you leave the input text field, a function is automatically triggered, which will take you to the Wikipedia page on oranges (the fruit).</p>
+<label class="ANDI508-relatedLaserTarget" data-andi508-relatedlaserindex="0">Enter your full legal name: <input type="text" id="fname" aria-describedby="wikiwarn" onblur="myFunction()" class="ANDI508-element ANDI508-highlight" data-andi508-index="1"></label>
+
+<script>
+function myFunction() {
+    window.open("https://en.wikipedia.org/wiki/Orange_(fruit)");
+}
+</script>
+
+</div>
+<div class="w3-container">
+  <div id="langForm" class="w3-bar">
+    <fieldset>
+      <legend class="ANDI508-relatedLaserTarget" data-andi508-relatedlaserindex="1">Page Language</legend>
+      <input type="radio" name="lang" value="en" id="en" class="ANDI508-element ANDI508-highlight" data-andi508-index="1">
+      <label for="en" class="ANDI508-relatedLaserTarget" data-andi508-relatedlaserindex="0">English</label> | 
+      <input type="radio" name="lang" value="sp" id="sp" class="ANDI508-element ANDI508-highlight" data-andi508-index="2">
+      <label for="sp" class="ANDI508-relatedLaserTarget" data-andi508-relatedlaserindex="2">Spanish</label> | 
+      <input type="radio" name="lang" value="fr" id="fr" class="ANDI508-element ANDI508-highlight" data-andi508-index="3">
+      <label for="fr" class="ANDI508-relatedLaserTarget" data-andi508-relatedlaserindex="3">French</label> | 
+      <input type="radio" name="lang" value="de" id="de" class="ANDI508-element ANDI508-highlight" data-andi508-index="4">
+      <label for="de" class="ANDI508-relatedLaserTarget" data-andi508-relatedlaserindex="4">German</label>
+    </fieldset>
+  </div>
+  <div id="pgContent" class="Content w3-container w3-card">
+    <h1>Department of Homeland Security</h1>
+    <div id="en-card" lang="en" class="langContent">
+      Hello and welcome to the Department of Homeland Security's Accessibility web page.
+    </div>
+    <div id="sp-card" lang="es" class="langContent hide">
+      Hola y bienvenidos a la página web de Accesibilidad del Departamento de Seguridad Nacional.
+    </div>
+    <div id="fr-card" lang="fr" class="langContent hide">
+      Bonjour et bienvenue sur la page Web d'accessibilité du Département de la Sécurité Intérieure.
+    </div>
+    <div id="de-card" lang="de" class="langContent hide">
+      Hallo und willkommen auf der Accessibility-Website des Ministeriums für Heimatschutz.
+    </div>
+  </div>
+</div>
+</body></html>
