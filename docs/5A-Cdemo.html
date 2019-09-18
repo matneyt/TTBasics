@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>5A-5C</title>
+<style>
+table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+td, th {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+}
+
+tr:nth-child(even) {
+  background-color: #dddddd;
+}
+</style>
+</head>
+<body>
+
+<form action="/action_page.php">
+<h2>Labels</h2>
+<ol>
+
+<li><label for="SSN">Social Security Number (XXX-XX-XXXX): <input type="text" name="SSN1" id="SSN"></li><br> <br>
+<li><fieldset> <legend>SSN:</legend> <label for="SSN1"><input type="text" name="SSN2" title="First 3 digits of Social Security Number" id="SSN1" size="3" maxlength="3"> 
+<label for="SSN12"><input type="text" name="SSN12" id="SSN12" title="Second 2 digits of Social Security Number" size="2" maxlength="2"> 
+<label for="SSN13"><input type="text" name="SSN13" id="SSN13" title="Last 4 digits of Social Security Number" size="4" maxlength="4"></fieldset></li><br> <br>
+<li><fieldset> <legend>SSN (XXX-XX-XXXX):</legend> <input type="text" name="SSN3"  size="3" maxlength="3"> 
+<input type="text" name="SSN32"  size="2" maxlength="2"> 
+<input type="text" name="SSN33"  size="4" maxlength="4"></fieldset></li><br> <br>
+<li><label for="PN">Phone Number: <input type="text" id="PN" name="PN1"></li><br> <br>
+<li><fieldset> <legend>Phone Number (XXX-XXX-XXXX):</legend> <input type="text" name="PN3"  size="3" maxlength="3"> 
+<input type="text" name="PN32"  size="3" maxlength="3"> 
+<input type="text" name="PN33"  size="4" maxlength="4"></fieldset></li><br> <br>
+<li><label for="PN2"><input type="text" name="PN2" id="PN2" title="Phone Number" placeholder="Phone Number" onfocus="this.placeholder = ''" ></li><br><br>
+<li> <label for="phone">Phone Number: <input type="tel" id="phone" name="phone" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}" required></li><br><br>
+<li><fieldset> <legend>Phone Number</legend>
+<label for="P3">(area code): <input type="text" name="PN3" id="P3" size="3" maxlength="3"> <label for="P4">(3 digits): <input type="text" name="P4" id="PN8" size="3" maxlength="3"> 
+<label for="P5">(4 digits): <input type="text" name="PN5" id="P5" size="4" maxlength="4"></fieldset></li><br><br>
+<li><label for="PN3">(<input type="text" id="PN3" title="Phone Number Area code" name="PN3" size="3" maxlength="3">)-<label for="PN4"><input type="text" name="PN4" id="PN4" title="Phone number second 3 digits" size="3" maxlength="3"> -
+<label for="PN5"><input type="text" id="PN5" title=" Phone Number Last 4 digits" name="PN5" size="4" maxlength="4"></li><br><br>
+<li><label for="J5">Jibberish <input type="text" id="J5" name="J5"></li><br><br></ol>
+<input type="submit" value="Submit">
+</form>
+<br>
+<br>
+
+<table>
+  <tr>
+    <th scope="col">Company</th>
+    <th scope="col">Contact</th>
+    <th scope="col">Country</th>
+  </tr>
+  <tr>
+    <th scope="row"><label for="row-1"><input type="text" id="row-1" title="Input Company name" name="row-1"></th>
+    <td><label for="row-2"><input type="text" id="row-2" title="Input Contact name" name="row-2"></td>
+    <td><label for="row-3"><input type="text" id="row-3" title="Input location (country) of compnay" name="row-3"></td>
+  </tr>
+  <tr>
+    <th scope="row">Walmart</th>
+    <td>Bob Jones</td>
+    <td>Mexico</td>
+  </tr>
+  <tr>
+    <th scope="row">Ikea</th>
+    <td>Roland Smith</td>
+    <td>Sweden</td>
+  </tr>
+ 
+</table>
+
+</html>
