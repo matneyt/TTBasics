@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<title>Forms Testing</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="w3-modified.css">
+<link rel="stylesheet" href="w3-theme-indigo-modified.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="ttbasics.css">
+<body>
+
+<!-- Navbar -->
+<div class="w3-top">
+	<a href="#main-content" id="skipNavLink" class="visually-hidden visible-when-focused bypass-block-link" tabindex="1">Skip to Content</a>
+	<a class="w3-bar-item w3-button w3-right w3-hide-large w3-hover-white w3-large w3-theme-l1" href="javascript:void(0)" onclick="w3_open()"><i class="fa fa-bars"></i></a>
+    <a href="index.html" class="w3-bar-item w3-hide-small"><img src="images/NewEditions_white.png" alt="New Editions Consulting Inc. Company Logo" style="margin-left:10px;"></img></a>
+	<a href="index.html" class="w3-bar-item w3-hide-medium w3-hide-large"><img src="images/NewEditions_white_small.png" alt="New Editions Consulting Inc. Company Logo" style="margin-left:10px;"></img></a>
+</div>
+
+<!-- Sidebar -->
+<nav class="w3-sidebar w3-bar-block w3-collapse w3-large w3-theme-l5 w3-animate-left" id="mySidebar">
+  <a href="javascript:void(0)" onclick="w3_close()" class="w3-right w3-xlarge w3-padding-large w3-hover-indigo w3-hide-large" title="Close Menu">
+    <i class="fa fa-remove"></i>
+  </a>
+  <h4 class="w3-bar-item"><b>Menu</b></h4>
+  <a class="w3-bar-item w3-button w3-hover-indigo" href="index.html">Introduction</a>
+  <a class="w3-bar-item w3-button w3-indigo" href="2keyboard_1keyboard.html">Keyboard</a>
+  <a class="w3-bar-item w3-button w3-hover-indigo" href="#">Link</a>
+  <a class="w3-bar-item w3-button w3-hover-indigo" href="#">Link</a>
+</nav>
+
+<!-- Overlay effect when opening sidebar on small screens -->
+<div class="w3-overlay w3-hide-large" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
+
+<!-- Main content: shift it to the right by 250 pixels when the sidebar is visible -->
+<main id="main-content">
+<div class="w3-main" style="margin-left:250px; margin-top:36px;">
+
+  <div class="w3-row w3-padding-64">
+    <div class="w3-container w3-margin w3-card">
+		<h1>5.C 1.3.1-programmatic-label</h1>
+	  <table class="w3-table w3-margin-bottom">
+		<thead>
+			<tr class="w3-indigo">
+				<th class="w3-border w3-border-white">Test Name</th>
+				<th class="w3-border w3-border-white">Test ID</th>
+				<th class="w3-border w3-border-white">Test Condition</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr class="w3-border">
+				<td><strong>1.3.1-programmatic-label</strong></td>
+				<td>5.C</td>
+				<td>The combination of the accessible name, accessible description, and other programmatic associations (e.g., table column and/or row associations) describes each input field and includes all relevant instructions and cues (textual and graphical). 
+ </td>
+			</tr>
+		<tbody>
+	  </table>
+	  <h4>Evaluate Results:</h4>
+	  <p>If ANY of the following are <strong>TRUE</strong>, the content <strong>PASSES</strong>:</p>
+	  <ol>
+		<li>The ANDI Output includes all relevant instructions and cues for the form element, including when fields are required, OR 
+</li>
+<li>Descriptive labels and cues are provided by other programmatic  associations <strong>(e.g., table column and/or row associations)</strong>, OR </li>
+<li>A combination of ANDI Output AND other programmatic association includes all relevant instructions and cues. </li>
+
+	  </ol>
+    </div>
+  </div>
+
+	<div class="w3-row">
+    <div class="w3-margin w3-container w3-leftbar w3-border-blue w3-pale-blue">
+      <h2>Tips:</h2>
+      <ul>
+		<li>You may need to use other ANDI modules to test for elements such as form fields within a table (table module) or headings (content structure module which we will cover later).</li>
+		<li>If you find a form element and the focusable elements module does not pick up ALL relevant instructions and cues, try using another ANDI module.</li>
+		<li>Test any changes to form elements that occur automatically or as a result of interaction with the page.</li>
+		<li>The content (or <option> elements) of a drop-down list (or <select> element) is not part of the form field description, cues, or instructions needed to pass this requirement.</li>
+		<li>Items may have passed or failed 5.A and/or 5.B <strong>BUT</strong> must still be tested here. (You could have some seemingly contradictory results with these forms tests since each test ID is testing for different disabilities impacted).</li>
+		<li>Pay attention to which ID is testing for what and simply follow the test instructions.</li>
+	  </ul>
+    </div>
+  </div>
+
+  <!-- Pagination -->
+  <div class="w3-center w3-padding-32">
+    <div class="w3-bar">
+		<a class="w3-button w3-hover-indigo" href="2keyboard_1keyboard.html"><i class="fa fa-angle-double-left" aria-label="back"></i></a>	
+		<a class="w3-button w3-hover-indigo" href="2keyboard_1keyboard.html">1</a>
+		<a class="w3-button w3-indigo" href="#">2</a>
+		<a class="w3-button w3-hover-indigo" href="#">3</a>
+		<a class="w3-button w3-hover-indigo" href="#">4</a>
+		<a class="w3-button w3-hover-indigo" href="#">5</a>
+		<a class="w3-button w3-hover-indigo" href="#">»</a>
+    </div>
+  </div>
+
+  <footer id="myFooter">
+    <div class="w3-container w3-theme-l2 w3-padding">
+      <p>Introduction to Trused Tester Methods<br>ICT Accessibility Testing Symposium - October 2019</p>
+	  <p>Copyright (c) 2019 New Editions Consulting, Inc.</p>
+    </div>
+  </footer>
+
+
+</div>
+</main>
+<!-- END MAIN -->
+
+<script>
+// Get the Sidebar
+var mySidebar = document.getElementById("mySidebar");
+// Get the DIV with overlay effect
+var overlayBg = document.getElementById("myOverlay");
+// Toggle between showing and hiding the sidebar, and add overlay effect
+function w3_open() {
+  if (mySidebar.style.display === 'block') {
+    mySidebar.style.display = 'none';
+    overlayBg.style.display = "none";
+  } else {
+    mySidebar.style.display = 'block';
+    overlayBg.style.display = "block";
+  }
+}
+// Close the sidebar with the close button
+function w3_close() {
+  mySidebar.style.display = "none";
+  overlayBg.style.display = "none";
+}
+</script>
+
+</body>
+</html>
