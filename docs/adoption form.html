@@ -209,12 +209,12 @@ function myFunction() {
             <input type="text" id="cname" name="cardname" placeholder="required" onfocus="this.placeholder=''" required>
             <label for="ccnum">*Credit card number:</label>
             <input type="text" id="ccnum" name="cardnumber" required>
-            <label for="expmonth">*Exp Month:</label>
-            <input type="text" id="expmonth" name="expmonth">
+            <label for="expmonth"></label>
+            <input type="text" id="expmonth" placeholder="*Exp Month:" onfocus="this.placeholder = ''" name="expmonth">
             <div class="row">
               <div class="col-50">
-                <label for="expyear">*Exp Year</label>
-                <input type="text" id="expyear" name="expyear" required>
+                <label for="expyear"></label>
+                <input type="text" id="expyear" name="expyear" title="*Exp Year" required>
               </div>
               <div class="col-50">
                 <label for="cvv">*CVV</label>
