@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-<title>Keyboard Access</title>
+<title>Keystroke Timing</title>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="w3-modified.css">
@@ -39,7 +39,7 @@
 
   <div class="w3-row w3-padding-64">
     <div class="w3-container w3-margin w3-card">
-		<h1>4.A, 2.1.1-keyboard-access</h1>
+		<h1>4.B, 2.1.1-no-keystroke-timing</h1>
 	  <table class="w3-table w3-margin-bottom">
 		<thead>
 			<tr class="w3-indigo">
@@ -50,17 +50,16 @@
 		</thead>
 		<tbody>
 			<tr class="w3-border">
-				<td><strong>2.1.1-keyboard-access</strong></td>
-				<td>4.A</td>
-				<td>All functionality can be access and executed using only the keyboard.</td>
+				<td><strong>2.1.1-no-keystroke-timing</strong></td>
+				<td>4.B</td>
+				<td>Individual keystrokes do not require specific timings for activation of functionality.</td>
 			</tr>
 		<tbody>
 	  </table>
 	  <h4>Evaluate Results:</h4>
-	  <p>If BOTH of the following are <strong>TRUE</strong>, the content <strong>PASSES</strong>:</p>
+	  <p>If the following are <strong>TRUE</strong>, the content <strong>PASSES</strong>:</p>
 	  <ol>
-		<li>All functionality can be accessed and executed using the keyboard,<br>AND</li>
-		<li>All essential information can be accessed via keyboard interaction OR the information is available elsewhere on the page.</li>
+		<li>A keyboard method is provided for functionality to be activated without requiring users to perform specific timings for activation</li>
 	  </ol>
     </div>
 	
@@ -68,23 +67,22 @@
 		<div class="w3-margin w3-container w3-leftbar w3-border-blue w3-pale-blue">
 		  <h2>Tips:</h2>
 		  <ul>
-			<li>Focus on non-interactive elements is permitted.</li>
-			<li>Test any automatic changes resulting from interaction with the page.</li>
-			<li>Non-essential title/tooltip information is NOT required to have keyboard access.</li>
+			<li>Does not prohibit use of multiple keys (such as CTRL + ALT + Delete which can be also be achieved using sticky keys)</li>
+			<li>Does not allow press and hold for a period of time or multiple presses within a certain time frame</li>
+			<li>Not usual – timing of the keystrokes is required to activate the element, e.g. the speed at which a password keystrokes are typed is part of the password authentication.</li>
+			<li>Do not include items that already failed 4.A. </li>
 		  </ul>
 		</div>
 	</div>
   </div>
 
-	
-
   <!-- Pagination -->
   <div class="w3-center w3-padding-32">
     <div class="w3-bar">
-		<a class="w3-button w3-hover-indigo" href="2keyboard_1keyboard.html"><i class="fa fa-angle-double-left" aria-label="previous page"></i></a>
+		<a class="w3-button w3-hover-indigo" href="2keyboard_2keyboard-access.html"><i class="fa fa-angle-double-left" aria-label="previous page"></i></a>
 		<a class="w3-button w3-hover-indigo" href="2keyboard_1keyboard.html">1<a>
-		<a class="w3-button w3-indigo" href="2keyboard_2keyboard-access.html">2<a>
-		<a class="w3-button w3-hover-indigo" href="2keyboard_3keystroke-timing.html">3<a>
+		<a class="w3-button w3-hover-indigo" href="2keyboard_2keyboard-access.html">2<a>
+		<a class="w3-button w3-indigo" href="2keyboard_3keystroke-timing.html">3<a>
 		<a class="w3-button w3-hover-indigo" href="2keyboard_4keyboard-trap.html">4<a>
 		<a class="w3-button w3-hover-indigo" href="2keyboard_5focus-visible.html">5<a>
 		<a class="w3-button w3-hover-indigo" href="2keyboard_6on-focus.html">6<a>
@@ -92,7 +90,7 @@
 		<a class="w3-button w3-hover-indigo" href="2keyboard_8focus-order-reveal.html">8<a>
 		<a class="w3-button w3-hover-indigo" href="2keyboard_9focus-order-return.html">9<a>
 		<a class="w3-button w3-hover-indigo" href="2keyboard_10exam-tips.html">10<a>
-		<a class="w3-button w3-hover-indigo" href="2keyboard_3keystroke-timing.html" aria-label="next page">»</a>
+		<a class="w3-button w3-hover-indigo" href="2keyboard_4keyboard-trap.html" aria-label="next page">»</a>
     </div>
   </div>
 
