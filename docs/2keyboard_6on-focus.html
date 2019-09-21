@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-<title>Keyboard Access</title>
+<title>On-Focus</title>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="w3-modified.css">
@@ -39,7 +39,7 @@
 
   <div class="w3-row w3-padding-64">
     <div class="w3-container w3-margin w3-card">
-		<h1>4.A, 2.1.1-keyboard-access</h1>
+		<h1>4.E, 3.2.1-on-focus</h1>
 	  <table class="w3-table w3-margin-bottom">
 		<thead>
 			<tr class="w3-indigo">
@@ -50,49 +50,62 @@
 		</thead>
 		<tbody>
 			<tr class="w3-border">
-				<td><strong>2.1.1-keyboard-access</strong></td>
-				<td>4.A</td>
-				<td>All functionality can be access and executed using only the keyboard.</td>
+				<td><strong>3.2.1-on-focus</strong></td>
+				<td>4.E</td>
+				<td>When an interface component receives focus, it does not initiate an unexpected change of context.</td>
 			</tr>
 		<tbody>
 	  </table>
 	  <h4>Evaluate Results:</h4>
-	  <p>If BOTH of the following are <strong>TRUE</strong>, the content <strong>PASSES</strong>:</p>
+	  <p>If the following is <strong>TRUE</strong>, the content <strong>PASSES</strong>:</p>
 	  <ol>
-		<li>All functionality can be accessed and executed using the keyboard,<br>AND</li>
-		<li>All essential information can be accessed via keyboard interaction OR the information is available elsewhere on the page.</li>
+		<li>An unexpected change of context is not initiated when an interface component receives focus.</li>
 	  </ol>
     </div>
+	
+	<div class="w3-row">
+		<div class="w3-margin w3-container w3-leftbar w3-border-green w3-pale-green">
+		  <h2>Definitions:</h2>
+		  <p><strong>Change of Content: </strong>The page content changes in some way, e.g., expanding an outline, revealing/hiding content, or accessing a dynamic menu. A change in content may or may not result in a <strong><em>change of context.</em></strong></p>
+		  <p><strong>Change of Context: </strong>A major change in content that, if made without user awareness, can disorient users who are not able to view the entire page simultaneously. Examples of a change in context include:</p>
+			  <ul>
+				<li>Opening a new browser window.</li>
+				<li>Moving focus to a different component.</li>
+				<li>Submitting a form automatically when a component receives focus.</li>
+				<li>Going to a new web page or window, or appearing to do so.</li>
+				<li>Significantly rearranging the content of the page.</li>
+			  </ul>
+		  </p>
+		</div>
+	</div>
 	
 	<div class="w3-row">
 		<div class="w3-margin w3-container w3-leftbar w3-border-blue w3-pale-blue">
 		  <h2>Tips:</h2>
 		  <ul>
-			<li>Focus on non-interactive elements is permitted.</li>
-			<li>Test any automatic changes resulting from interaction with the page.</li>
-			<li>Non-essential title/tooltip information is NOT required to have keyboard access.</li>
+			<li>Focus on an element should not bring an unexpected change – user needs to select the interface component to initiate the change = a new window is launched, or focus is moved to another interface component.</li>
+			<li>It is key to understand the difference between a change of content and a change in context.  Applying this concept also impacts testing for forms in Topic 5 of the test process.</li>
 		  </ul>
 		</div>
 	</div>
-  </div>
-
 	
+  </div>
 
   <!-- Pagination -->
   <div class="w3-center w3-padding-32">
     <div class="w3-bar">
-		<a class="w3-button w3-hover-indigo" href="2keyboard_1keyboard.html"><i class="fa fa-angle-double-left" aria-label="previous page"></i></a>
+		<a class="w3-button w3-hover-indigo" href="2keyboard_5focus-visible.html"><i class="fa fa-angle-double-left" aria-label="previous page"></i></a>
 		<a class="w3-button w3-hover-indigo" href="2keyboard_1keyboard.html">1<a>
-		<a class="w3-button w3-indigo" href="2keyboard_2keyboard-access.html">2<a>
+		<a class="w3-button w3-hover-indigo" href="2keyboard_2keyboard-access.html">2<a>
 		<a class="w3-button w3-hover-indigo" href="2keyboard_3keystroke-timing.html">3<a>
 		<a class="w3-button w3-hover-indigo" href="2keyboard_4keyboard-trap.html">4<a>
 		<a class="w3-button w3-hover-indigo" href="2keyboard_5focus-visible.html">5<a>
-		<a class="w3-button w3-hover-indigo" href="2keyboard_6on-focus.html">6<a>
+		<a class="w3-button w3-indigo" href="2keyboard_6on-focus.html">6<a>
 		<a class="w3-button w3-hover-indigo" href="2keyboard_7focus-order.html">7<a>
 		<a class="w3-button w3-hover-indigo" href="2keyboard_8focus-order-reveal.html">8<a>
 		<a class="w3-button w3-hover-indigo" href="2keyboard_9focus-order-return.html">9<a>
 		<a class="w3-button w3-hover-indigo" href="2keyboard_10exam-tips.html">10<a>
-		<a class="w3-button w3-hover-indigo" href="2keyboard_3keystroke-timing.html" aria-label="next page">»</a>
+		<a class="w3-button w3-hover-indigo" href="2keyboard_7focus-order.html" aria-label="next page">»</a>
     </div>
   </div>
 

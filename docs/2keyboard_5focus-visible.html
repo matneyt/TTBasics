@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-<title>Keyboard Access</title>
+<title>Visible Focus</title>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="w3-modified.css">
@@ -39,7 +39,7 @@
 
   <div class="w3-row w3-padding-64">
     <div class="w3-container w3-margin w3-card">
-		<h1>4.A, 2.1.1-keyboard-access</h1>
+		<h1>4.D, 2.4.7-focus-visible</h1>
 	  <table class="w3-table w3-margin-bottom">
 		<thead>
 			<tr class="w3-indigo">
@@ -50,17 +50,16 @@
 		</thead>
 		<tbody>
 			<tr class="w3-border">
-				<td><strong>2.1.1-keyboard-access</strong></td>
-				<td>4.A</td>
-				<td>All functionality can be access and executed using only the keyboard.</td>
+				<td><strong>2.4.7-focus-visible</strong></td>
+				<td>4.D</td>
+				<td>A visible indication of focus is provided when focus is on the interface component.</td>
 			</tr>
 		<tbody>
 	  </table>
 	  <h4>Evaluate Results:</h4>
-	  <p>If BOTH of the following are <strong>TRUE</strong>, the content <strong>PASSES</strong>:</p>
+	  <p>If the following is <strong>TRUE</strong>, the content <strong>PASSES</strong>:</p>
 	  <ol>
-		<li>All functionality can be accessed and executed using the keyboard,<br>AND</li>
-		<li>All essential information can be accessed via keyboard interaction OR the information is available elsewhere on the page.</li>
+		<li>When each interface element receives focus, there is a visible indication of focus.</li>
 	  </ol>
     </div>
 	
@@ -68,31 +67,44 @@
 		<div class="w3-margin w3-container w3-leftbar w3-border-blue w3-pale-blue">
 		  <h2>Tips:</h2>
 		  <ul>
-			<li>Focus on non-interactive elements is permitted.</li>
-			<li>Test any automatic changes resulting from interaction with the page.</li>
-			<li>Non-essential title/tooltip information is NOT required to have keyboard access.</li>
+			<li>Look carefully as there is not a contrast requirement for focus in AA standard – that is AAA.</li>
+			<li>DO NOT use ANDI for this test since it can add markup that will skew your test results.</li>
+			<li>Emphasis is on the interactive element.</li>
+			<li>Does not apply to elements that do not receive keyboard focus. (Those elements are not failed for both 4.A and 4.D.)</li>
+			<li>Focus indicator is not required to be the same – can be outline, change in hue (though not use of color), making font bold.</li>
 		  </ul>
 		</div>
 	</div>
-  </div>
-
+	<div class="w3-row">
+		<div class="w3-margin w3-container w3-leftbar w3-border-red w3-pale-red">
+		  <h2>Notes for Focus with a <code>&lt;frame&gt;</code>:</h2>
+		  <p>To confirm keyboard focus is on a frame when there is not visible focus:</p>
+		  <ol>
+			<li>Use the TAB and SHIFT + TAB combination to deduce that the keyboard focus is on the frame.</li>
+			<li>When on the frame, a tab forward should move focus to the first keyboard focusable element within the frame.</li>
+			<li>From there, SHIFT + TAB once to move back to the frame and another SHIFT + TAB  should move focus to a keyboard focusable element before the frame.</li>
+		  </ol>
+		  <p>Only the frame is permitted to not have a visible focus. Be certain it is the frame that does not have a visible focus and not another element.</p>
+		</div>
+	</div>
 	
+  </div>
 
   <!-- Pagination -->
   <div class="w3-center w3-padding-32">
     <div class="w3-bar">
-		<a class="w3-button w3-hover-indigo" href="2keyboard_1keyboard.html"><i class="fa fa-angle-double-left" aria-label="previous page"></i></a>
+		<a class="w3-button w3-hover-indigo" href="2keyboard_4keyboard-trap.html"><i class="fa fa-angle-double-left" aria-label="previous page"></i></a>
 		<a class="w3-button w3-hover-indigo" href="2keyboard_1keyboard.html">1<a>
-		<a class="w3-button w3-indigo" href="2keyboard_2keyboard-access.html">2<a>
+		<a class="w3-button w3-hover-indigo" href="2keyboard_2keyboard-access.html">2<a>
 		<a class="w3-button w3-hover-indigo" href="2keyboard_3keystroke-timing.html">3<a>
 		<a class="w3-button w3-hover-indigo" href="2keyboard_4keyboard-trap.html">4<a>
-		<a class="w3-button w3-hover-indigo" href="2keyboard_5focus-visible.html">5<a>
+		<a class="w3-button w3-indigo" href="2keyboard_5focus-visible.html">5<a>
 		<a class="w3-button w3-hover-indigo" href="2keyboard_6on-focus.html">6<a>
 		<a class="w3-button w3-hover-indigo" href="2keyboard_7focus-order.html">7<a>
 		<a class="w3-button w3-hover-indigo" href="2keyboard_8focus-order-reveal.html">8<a>
 		<a class="w3-button w3-hover-indigo" href="2keyboard_9focus-order-return.html">9<a>
 		<a class="w3-button w3-hover-indigo" href="2keyboard_10exam-tips.html">10<a>
-		<a class="w3-button w3-hover-indigo" href="2keyboard_3keystroke-timing.html" aria-label="next page">»</a>
+		<a class="w3-button w3-hover-indigo" href="2keyboard_6on-focus.html" aria-label="next page">»</a>
     </div>
   </div>
 

@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-<title>Keyboard Access</title>
+<title>Focus Order</title>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="w3-modified.css">
@@ -39,7 +39,7 @@
 
   <div class="w3-row w3-padding-64">
     <div class="w3-container w3-margin w3-card">
-		<h1>4.A, 2.1.1-keyboard-access</h1>
+		<h1>4.F, 2.4.3-focus-order-meaning</h1>
 	  <table class="w3-table w3-margin-bottom">
 		<thead>
 			<tr class="w3-indigo">
@@ -50,49 +50,63 @@
 		</thead>
 		<tbody>
 			<tr class="w3-border">
-				<td><strong>2.1.1-keyboard-access</strong></td>
-				<td>4.A</td>
-				<td>All functionality can be access and executed using only the keyboard.</td>
+				<td><strong>2.4.3-focus-order-meaning</strong></td>
+				<td>4.F</td>
+				<td>The focus order preserves the meaning and operability of the web page.</td>
 			</tr>
 		<tbody>
 	  </table>
 	  <h4>Evaluate Results:</h4>
-	  <p>If BOTH of the following are <strong>TRUE</strong>, the content <strong>PASSES</strong>:</p>
+	  <p>If ALL of the following are <strong>TRUE</strong>, the content <strong>PASSES</strong>:</p>
 	  <ol>
-		<li>All functionality can be accessed and executed using the keyboard,<br>AND</li>
-		<li>All essential information can be accessed via keyboard interaction OR the information is available elsewhere on the page.</li>
+		<li>The focus order preserves the meaning of the page, AND</li>
+		<li>The focus order preserves the operability of the page.</li>
 	  </ol>
     </div>
+	
+	<div class="w3-row">
+		<div class="w3-margin w3-container w3-leftbar w3-border-green w3-pale-green">
+		  <h2>Definition:</h2>
+		  <p><strong>Modal Dialog Box: </strong>A modal dialog box (such as a Save As dialog box) requires a user to interact with it before they can go back to the main page. Visual focus is expected to remain within a modal dialog box until it is closed.</p>
+		</div>
+	</div>
+	
+	<div class="w3-row">
+		<div class="w3-margin w3-container w3-leftbar w3-border-red w3-pale-red">
+		  <h2>Notes:</h2>
+		  <ul>
+			<li>ANDI tab order markup may be slightly different in certain browsers than a keyboard user’s experience. Always use results from keyboard navigation.</li>
+		  </ul>
+		</div>
+	</div>
 	
 	<div class="w3-row">
 		<div class="w3-margin w3-container w3-leftbar w3-border-blue w3-pale-blue">
 		  <h2>Tips:</h2>
 		  <ul>
-			<li>Focus on non-interactive elements is permitted.</li>
-			<li>Test any automatic changes resulting from interaction with the page.</li>
-			<li>Non-essential title/tooltip information is NOT required to have keyboard access.</li>
+			<li>Failures are most noticeable when focus order does not follow the logical order of operation (normally top to bottom, left to right).</li>
+			<li>The Focus order can be different if the specific order does not matter.</li>
 		  </ul>
 		</div>
 	</div>
-  </div>
-
 	
+  </div>
 
   <!-- Pagination -->
   <div class="w3-center w3-padding-32">
     <div class="w3-bar">
-		<a class="w3-button w3-hover-indigo" href="2keyboard_1keyboard.html"><i class="fa fa-angle-double-left" aria-label="previous page"></i></a>
+		<a class="w3-button w3-hover-indigo" href="2keyboard_6on-focus.html"><i class="fa fa-angle-double-left" aria-label="previous page"></i></a>
 		<a class="w3-button w3-hover-indigo" href="2keyboard_1keyboard.html">1<a>
-		<a class="w3-button w3-indigo" href="2keyboard_2keyboard-access.html">2<a>
+		<a class="w3-button w3-hover-indigo" href="2keyboard_2keyboard-access.html">2<a>
 		<a class="w3-button w3-hover-indigo" href="2keyboard_3keystroke-timing.html">3<a>
 		<a class="w3-button w3-hover-indigo" href="2keyboard_4keyboard-trap.html">4<a>
 		<a class="w3-button w3-hover-indigo" href="2keyboard_5focus-visible.html">5<a>
 		<a class="w3-button w3-hover-indigo" href="2keyboard_6on-focus.html">6<a>
-		<a class="w3-button w3-hover-indigo" href="2keyboard_7focus-order.html">7<a>
+		<a class="w3-button w3-indigo" href="2keyboard_7focus-order.html">7<a>
 		<a class="w3-button w3-hover-indigo" href="2keyboard_8focus-order-reveal.html">8<a>
 		<a class="w3-button w3-hover-indigo" href="2keyboard_9focus-order-return.html">9<a>
 		<a class="w3-button w3-hover-indigo" href="2keyboard_10exam-tips.html">10<a>
-		<a class="w3-button w3-hover-indigo" href="2keyboard_3keystroke-timing.html" aria-label="next page">»</a>
+		<a class="w3-button w3-hover-indigo" href="2keyboard_8focus-order-reveal.html" aria-label="next page">»</a>
     </div>
   </div>
 
