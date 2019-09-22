@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-<title>Introduction to Trusted Tester Methods Workshop</title>
+<title>Heading Level</title>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="icon" href="images/NE_favicon.png">
@@ -15,8 +15,8 @@
 <div class="w3-top">
 	<a href="#main-content" id="skipNavLink" class="visually-hidden visible-when-focused bypass-block-link" tabindex="1">Skip to Content</a>
 	<a class="w3-bar-item w3-button w3-right w3-hide-large w3-hover-white w3-large w3-theme-l1" href="javascript:void(0)" onclick="w3_open()"><i class="fa fa-bars"></i></a>
-    <a href="#" class="w3-bar-item w3-hide-small"><img src="images/NewEditions_white.png" alt="New Editions Consulting Inc. Company Logo" style="margin-left:10px;"></img></a>
-	<a href="#" class="w3-bar-item w3-hide-medium w3-hide-large"><img src="images/NewEditions_white_small.png" alt="New Editions Consulting Inc. Company Logo" style="margin-left:10px;"></img></a>
+    <a href="index.html" class="w3-bar-item w3-hide-small"><img src="images/NewEditions_white.png" alt="New Editions Consulting Inc. Company Logo" style="margin-left:10px;"></img></a>
+	<a href="index.html" class="w3-bar-item w3-hide-medium w3-hide-large"><img src="images/NewEditions_white_small.png" alt="New Editions Consulting Inc. Company Logo" style="margin-left:10px;"></img></a>
 </div>
 
 <!-- Sidebar -->
@@ -25,9 +25,9 @@
     <i class="fa fa-remove"></i>
   </a>
   <h4 class="w3-bar-item"><b>Menu</b></h4>
-  <a class="w3-bar-item w3-button w3-indigo" href="index.html">Introduction</a>
+  <a class="w3-bar-item w3-button w3-hover-indigo" href="index.html">Introduction</a>
   <a class="w3-bar-item w3-button w3-hover-indigo" href="2keyboard_1keyboard.html">Keyboard</a>
-  <a class="w3-bar-item w3-button w3-hover-indigo" href="3structure_1heaing.html">Structure</a>
+  <a class="w3-bar-item w3-button w3-indigo" href="3structure_1heaing.html">Structure</a>
   <a class="w3-bar-item w3-button w3-hover-indigo" href="#">Link</a>
 </nav>
 
@@ -37,53 +37,56 @@
 <!-- Main content: shift it to the right by 250 pixels when the sidebar is visible -->
 <main id="main-content">
 <div class="w3-main" style="margin-left:250px; margin-top:36px;">
-
-  <div class="w3-row" style="padding-top: 64px">
-    <div class="w3-margin w3-container">
-      <h1>Introduction to Trusted Tester Methods Workshop</h1>
-	  <h2>ICT Accessibility Testing Symposium - 2019</h2>
-      <p>A one-day workshop intended to provide an overview of the Trusted Tester process, review of some of the key test steps, and some tips and tricks for progressing through the Trusted Tester training course and certification.</p>
+	<div class="w3-row" style="padding-top: 64px">
+		<div class="w3-margin w3-container w3-card">
+			<h1>10.C, 2.4.6-heading-level</h1>
+		  <table class="w3-table w3-margin-bottom">
+			<thead>
+				<tr class="w3-indigo">
+					<th class="w3-border w3-border-white">Test Name</th>
+					<th class="w3-border w3-border-white">Test ID</th>
+					<th class="w3-border w3-border-white">Test Condition</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr class="w3-border">
+					<td><strong>2.4.6-heading-level</strong></td>
+					<td>10.C</td>
+					<td>Programmatic heading levels logically match the visual heading presentation within the heading structure.</td>
+				</tr>
+			<tbody>
+		  </table>
+	  <h4>Evaluate Results:</h4>
+	  <p>If ALL the following are <strong>TRUE</strong>, the content <strong>PASSES</strong>:</p>
+	  <ol>
+		<li>Every programmatically identified heading level logically matches the visual heading structure on the page, <br>AND</li>
+		<li>There is no heading level conflict.</li>
+	  </ol>
     </div>
-  </div>
-
-  <div class="w3-row">
-    <div class="w3-margin w3-container w3-card">
-      <h2>Workshop Goals</h2>
+	</div>
+	
+	<div class="w3-row">
+    <div class="w3-margin w3-container w3-leftbar w3-border-blue w3-pale-blue">
+      <h2>Tips:</h2>
       <ul>
-		<li>Provide an understanding of the Trusted Tester certification course</li>
-		<li>Introduce you to use of the ANDI tool</li>
-		<li>Give you hands-on experience testing using ANDI</li>
-		<li>Provide testing tips and tricks</li>
-		<li>Expose you to some of the FAQ</li>
+		<li>More than one <code>&lt;h1&gt;</code> can be used on a page.</li>
+		<li>Heading levels may use different sequence
+			<ul>
+				<li><code>&lt;h4&gt;</code> following <code>&lt;h2&gt;</code>, no <code>&lt;h3&gt;</code> in between, as long as it is consistent , matches the importance level, and communicates same thing visually on the page.</li>
+				<li>an <code>&lt;h2&gt;</code> heading may be used for a navigation structure that precedes an <code>&lt;h1&gt;</code> title on a page.</li></li></ul>
 	  </ul>
     </div>
   </div>
 
-  <div class="w3-row">
-    <div class="w3-margin w3-container w3-card">
-      <h2>Today's Topics</h2>
-      <ul>
-		<li>Quick overview (Ann Marie)</li>
-		<li>Topic 4 Keyboard and Focus (Ann Marie)</li>
-		<li>Topic 10 Content Structure (Ann Marie)</li>
-		<li>Topic 5 Forms (Kristen)</li>
-		<li>Topic 6 Links and Buttons (Andrew)</li>
-		<li>Topic 7 Images (Andrew)</li>
-		<li>Questions</li>
-		<li>Wrap-up and certification process</li>
-	  </ul>
-    </div>
-  </div>
-  
   <!-- Pagination -->
   <div class="w3-center w3-padding-32">
     <div class="w3-bar">
-      <a class="w3-button w3-indigo" href="#">1</a>
-      <a class="w3-button w3-hover-indigo" href="1intro_2origin.html">2</a>
-      <a class="w3-button w3-hover-indigo" href="1intro_3evol.html">3</a>
-      <a class="w3-button w3-hover-indigo" href="1intro_4hist.html">4</a>
-      <a class="w3-button w3-hover-indigo" href="1intro_5benefits.html">5</a>
-      <a class="w3-button w3-hover-indigo" href="1intro_2origin.html" aria-label="next page">»</a>
+		<a class="w3-button w3-hover-indigo" href="3structure_2heading-det.html"><i class="fa fa-angle-double-left" aria-label="previous page"></i></a>
+		<a class="w3-button w3-hover-indigo" href="3structure_1heading.html">1<a>
+		<a class="w3-button w3-hover-indigo" href="3structure_2heading-det.html">2<a>
+		<a class="w3-button w3-indigo" href="3structure_3heading-lev.html">3<a>
+		<a class="w3-button w3-hover-indigo" href="3structure_4list.html">4<a>
+		<a class="w3-button w3-hover-indigo" href="3structure_4list.html" aria-label="next page">»</a>
     </div>
   </div>
 
