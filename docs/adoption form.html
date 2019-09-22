@@ -35,11 +35,9 @@ body {
   font-size: 17px;
   padding: 8px;
 }
-
 * {
   box-sizing: border-box;
 }
-
 .row {
   display: -ms-flexbox; /* IE10 */
   display: flex;
@@ -47,35 +45,29 @@ body {
   flex-wrap: wrap;
   margin: 0 -16px;
 }
-
 .col-25 {
   -ms-flex: 25%; /* IE10 */
   flex: 25%;
 }
-
 .col-50 {
   -ms-flex: 50%; /* IE10 */
   flex: 50%;
 }
-
 .col-75 {
   -ms-flex: 75%; /* IE10 */
   flex: 75%;
 }
-
 .col-25,
 .col-50,
 .col-75 {
   padding: 0 16px;
 }
-
 .container {
   background-color: #f2f2f2;
   padding: 5px 20px 15px 20px;
   border: 1px solid lightgrey;
   border-radius: 3px;
 }
-
 input[type=text] {
   width: 100%;
   margin-bottom: 20px;
@@ -83,18 +75,15 @@ input[type=text] {
   border: 1px solid #ccc;
   border-radius: 3px;
 }
-
 label {
   margin-bottom: 10px;
   display: block;
 }
-
 .icon-container {
   margin-bottom: 20px;
   padding: 7px 0;
   font-size: 24px;
 }
-
 .btn {
   background-color: #258829;
   color: white;
@@ -106,24 +95,19 @@ label {
   cursor: pointer;
   font-size: 17px;
 }
-
 .btn:hover {
   background-color: #45a049;
 }
-
 a {
   color: #006fcc;
 }
-
 hr {
   border: 1px solid lightgrey;
 }
-
 span.price {
   float: right;
   color: black;
 }
-
 /* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other (also change the direction - make the "cart" column go on top) */
 @media (max-width: 800px) {
   .row {
@@ -132,6 +116,41 @@ span.price {
   .col-25 {
     margin-bottom: 20px;
   }
+}
+.collapsible {
+  background-color: #777;
+  color: white;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+}
+
+.active, .collapsible:hover {
+  background-color: #006ecb;
+}
+.collapsible:focus {background-color: #006ecb;}
+.collapsible:after {
+  content: '\002B';
+  color: white;
+  font-weight: bold;
+  float: right;
+  margin-left: 5px;
+}
+
+.active:after {
+  content: "\2212";
+}
+
+.content {
+  padding: 0 18px;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+  background-color: #f1f1f1;
 }
 </style>
 </head>
@@ -167,13 +186,34 @@ span.price {
 
 	<br>
 	<br>
+<button class="collapsible">Quick Links</button>
+<div class="content">
+  <p>Take me to <a href="#About"> About section</a></p>
+ <p>Take me to <a href="#Bill"> Billing section</a></p>
+  <p>Take me to <a href="#Cart"> my cart </a></p>
+</div>
+<script>
+var coll = document.getElementsByClassName("collapsible");
+var i;
+
+for (i = 0; i < coll.length; i++) {
+  coll[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var content = this.nextElementSibling;
+    if (content.style.maxHeight){
+      content.style.maxHeight = null;
+    } else {
+      content.style.maxHeight = content.scrollHeight + "px";
+    } 
+  });
+}
+</script>
 	<h2><strong>Form A-1 version 2019</strong></h2>
 <p>If you are interested in adopting a pet, please complete the application below.</p>
 	<p tabindex="-1">Select the link to learn <a href="https://www.petsafe.net/learn/essential-tips-for-first-time-pet-owners" id="pet"> tips and tricks</a> to care for your rescue!</p>
 
 <script>
 var el = document.getElementById('pet');
-
 el.onfocus = showpet;
 function showpet() {
 window.open('https://www.petsafe.net/learn/essential-tips-for-first-time-pet-owners','mywindow').focus();
@@ -186,7 +226,7 @@ window.open('https://www.petsafe.net/learn/essential-tips-for-first-time-pet-own
       
        <div class="row">
           <div class="col-50">
-		  <fieldset><legend> <h3><strong>About you</strong></h3></legend>
+		  <fieldset><legend> <h3 id="About"><strong>About you</strong></h3></legend>
             <label for="fname"><i class="fa fa-user"></i> *Name:</label>
             <input type="text" tabindex="1" id="fname" name="firstname" placeholder="Enter First name, middle initial, and last name such as John M. Doe"  onfocus="this.placeholder=''" required>
             <label for="pname"></i> Selection:</label>
@@ -236,7 +276,7 @@ function myFunction() {
       
           <fieldset>
           <legend>
-		  <h3><strong>Billing Address</strong></h3></legend>
+		  <h3 id="Bill"><strong>Billing Address</strong></h3></legend>
             <label>
           <input type="checkbox" tabindex="3" checked="checked" name="sameadr"> Shipping address same as billing
         </label>
@@ -296,7 +336,7 @@ function myFunction() {
   </div>
   <div class="col-25">
     <div class="container">
-	    <h3><strong>Pet Adoption Cart </strong><span class="price" style="color:black"><i class="fa fa-shopping-cart"></i> <b>1</b></span></h3>
+	    <h3 id="Cart"><strong>Pet Adoption Cart </strong><span class="price" style="color:black"><i class="fa fa-shopping-cart"></i> <b>1</b></span></h3>
       <p><a href="#" tabindex="0">Lily the cat</a> <span class="price">$15</span></p>
   
       <hr>
