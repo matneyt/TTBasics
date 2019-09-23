@@ -1,0 +1,147 @@
+<!-- main -->
+    <main class="container" id="main-contentP2">
+        <div class="text-center" id="reqAudit">
+            <h1 id="gardens" tabindex="-1">How Does Your Garden Grow?</h1>
+            <h1>Type of garden desired</h1>
+		<P> (All fields are required)</P>
+        </div>
+
+        <form class="form-con text-center section" method="post" id="form-register">
+            <div class="form-group">
+                <div class="field-Con">
+                    <label for="field1">Last Name</label>
+                    <input tabindex="0" type="text" class="form-control" id="field1">
+                </div>
+                <div class="field-Con">
+					<a href="#" tabindex="0" class="moveFocus">-</a>
+                    <label for="field2">First Name</label>
+                    <input tabindex="0" type="text" class="form-control keyboardTrap" id="field2">
+                </div>
+            </div>
+            <div class="form-group">
+                <div class="field-Con">
+                    <label for="field3">Email (name@address)</label>
+                    <input tabindex="0" type="email" class="form-control keyboardTrap" id="field3">
+    
+                </div>
+                <div class="field-Con">
+                    <label for="field4">Cell Phone (###.###.####)</label>
+		<input tabindex="-1" type="text" class="form-control keyboardTrap" id="field4">                    
+                </div>
+            </div>
+            <div class="form-group">
+                <div class="field-Con">
+                    <label for="field5">Street Address</label>
+                    <input tabindex="0" type="text" class="form-control keyboardTrap" id="field5">
+                </div>
+                
+            
+             <div class="field-Con">
+                    <label for="field6">City</label>
+                    <input tabindex="0" type="text" class="form-control" id="field6">
+                </div>
+	<div class="form-group">
+                <div class="field-Con">
+                    <label class="red" for="field7">State</label>
+                    <input tabindex="0" type="text" class="form-control keyboardTrap" id="field7">
+					<a href="#" tabindex="0" class="moveFocus"> _ </a>
+                </div>
+               
+                <div class="field-Con">
+                    <label for="field9">Zipcode (#####)</label>
+                    <input tabindex="0" type="text" class="form-control" id="field9">
+                </div>
+            </div>
+
+            <fieldset class="radio-fieldSet">
+                <legend class="red radio-legend">Preliminary Budget</legend>
+                <div class="radio-options">
+                    <label for="r1a">$250 or less</label>
+                    <input tabindex="0" type="radio" id="r1a" name="budget" value="radio">
+                </div>
+                <div class="radio-options">
+                    <label for="r1b">$251- $750</label>
+                    <input type="radio" id="r1b" name="budget" value="radio">
+                </div>
+                <div class="radio-options">
+                    <label for="r1c">$751 - $2000</label>
+                    <input type="radio" id="r1c" name="budget" value="radio">
+                </div>
+                <div class="radio-options">
+                    <label for="r1d">Over $2000</label>
+                    <input type="radio" id="r1d" name="budget" value="radio">
+                </div>
+            </fieldset>
+            <div class="form-group">
+                <label class="padRight50" for="field10">Preferred method of contact</label>
+                <select tabindex="0" class="options-con" id="field10">
+                    <option value="Phone">Phone</option>
+                    <option value="Email">Email</option>
+                </select>
+            </div>
+            <div class="superCertified section">
+				<fieldset style="display: inline;" >
+					<div id="superCert_message"></div>
+					<div>
+						<h3><label for="super">Superior Garden Options</h3> 
+						<p> <b>Selecting this checkbox will expand additional details below.</b>
+						<input type="checkbox" id="super" onclick="toggleHidden('superCertified-ID', true);">
+						</p>
+					</div>
+				</fieldset>
+            </div>
+            <div class="superCert-outline section" id="superCertified-ID">
+                <fieldset class="superCertified-questions text-center section">
+                    <legend>What amenities are you hoping to add? (Check all that apply.)</legend>
+                    <div class="checkbox-con">
+                        <div class="checkbox-options">
+                            <label for="cha">Tennis Court</label>
+                            <input type="checkbox" id="cha" onclick="handleCheckLink()">
+                        </div>
+                        <div class="checkbox-options">
+                            <label for="chb">Fountain</label>
+                            <input type="checkbox" id="chb" tabindex="0">
+                        </div>
+                        <div class="checkbox-options">
+                            <label for="chc">Outside Showers</label>
+                            <input type="checkbox" id="chc" tabindex="0">
+                        </div>
+                        <div class="checkbox-options">
+                            <label for="chd">Stone Paths</label>
+                            <input type="checkbox" id="chd" tabindex="0">
+                        </div>
+                        <div class="checkbox-options">
+                            <label for="che">Other</label>
+                            <input type="checkbox" id="che" tabindex="0">
+                        </div>
+                    </div>
+                </fieldset>
+                <div class="superCertified-questions2">
+                    <fieldset class="scq2-fieldset">
+                        <legend>Are you hoping to begin your project within 6 months?</legend>
+                        <div class="radio-groupCon">
+                            <div class="radio-group1">
+                                <label for="r2a">Yes</label>
+                                <input type="radio" id="r2a" name="r2">
+                            </div>
+                            <div class="radio-group2">
+                                <label for="r2b">No</label>
+                                <input type="radio" id="r2b" name="r2">
+                            </div>
+                        </div>
+                    </fieldset>
+                    <fieldset class="scq2-fieldset">
+                        <legend>Have you contacted Miss Utility to mark buried cables?</legend>
+                        <div class="radio-groupCon">
+                            <div class="radio-group1">
+                                <label for="r3a">Yes</label>
+                                <input type="radio" id="r3a" name="r3">
+                            </div>
+                            <div class="radio-group2">
+                                <label for="r3b">No</label>
+                                <input type="radio" id="r3b" name="r3">
+                            </div>
+                        </div>
+                    </fieldset>
+                </div>
+            </div>
