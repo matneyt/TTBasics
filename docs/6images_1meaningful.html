@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-<title>Heading Level</title>
+<title>Meaningful Image Name</title>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="icon" href="images/NE_favicon.png">
@@ -27,10 +27,10 @@
   <h4 class="w3-bar-item"><b>Menu</b></h4>
   <a class="w3-bar-item w3-button w3-hover-indigo" href="index.html">Introduction</a>
   <a class="w3-bar-item w3-button w3-hover-indigo" href="2keyboard_1keyboard.html">Keyboard</a>
-  <a class="w3-bar-item w3-button w3-indigo" href="3structure_1heading.html">Structure</a>
+  <a class="w3-bar-item w3-button w3-hover-indigo" href="3structure_1heading.html">Structure</a>
   <a class="w3-bar-item w3-button w3-hover-indigo" href="4links_1link-purpose.html">Links</a>
   <a class="w3-bar-item w3-button w3-hover-indigo" href="5FormsIntro.html">Forms</a>
-  <a class="w3-bar-item w3-button w3-hover-indigo" href="6images_1meaningful.html">Images</a>
+  <a class="w3-bar-item w3-button w3-indigo" href="6images_1meaningful.html">Images</a>
 </nav>
 
 <!-- Overlay effect when opening sidebar on small screens -->
@@ -41,7 +41,7 @@
 <div class="w3-main" style="margin-left:250px; margin-top:36px;">
 	<div class="w3-row" style="padding-top: 64px">
 		<div class="w3-margin w3-container w3-card">
-			<h1>10.C, 2.4.6-heading-level</h1>
+			<h1>7.A, 1.1.1-meaningful-image-name</h1>
 		  <table class="w3-table w3-margin-bottom">
 			<thead>
 				<tr class="w3-indigo">
@@ -52,43 +52,60 @@
 			</thead>
 			<tbody>
 				<tr class="w3-border">
-					<td><strong>2.4.6-heading-level</strong></td>
-					<td>10.C</td>
-					<td>Programmatic heading levels logically match the visual heading presentation within the heading structure.</td>
+					<td><strong>1.1.1-meaningful-image-name</strong></td>
+					<td>7.A</td>
+					<td>The accessible name and accessible description for a meaningful image provides an equivalent description of the image.</td>
 				</tr>
 			<tbody>
 		  </table>
 	  <h4>Evaluate Results:</h4>
-	  <p>If ALL the following are <strong>TRUE</strong>, the content <strong>PASSES</strong>:</p>
+	  <p>If the following is <strong>TRUE</strong>, the content <strong>PASSES</strong>:</p>
 	  <ol>
-		<li>Every programmatically identified heading level logically matches the visual heading structure on the page, <br>AND</li>
-		<li>There is no heading level conflict.</li>
+		<li>The ANDI Output contains the equivalent description for the meaningful image and/or refers to a description in the page content.</li>
 	  </ol>
     </div>
 	</div>
 	
 	<div class="w3-row">
-    <div class="w3-margin w3-container w3-leftbar w3-border-blue w3-pale-blue">
-      <h2>Tips:</h2>
-      <ul>
-		<li>More than one <code>&lt;h1&gt;</code> can be used on a page.</li>
-		<li>Heading levels may use different sequence
-			<ul>
-				<li><code>&lt;h4&gt;</code> following <code>&lt;h2&gt;</code>, no <code>&lt;h3&gt;</code> in between, as long as it is consistent , matches the importance level, and communicates same thing visually on the page.</li>
-				<li>an <code>&lt;h2&gt;</code> heading may be used for a navigation structure that precedes an <code>&lt;h1&gt;</code> title on a page.</li></li></ul>
-	  </ul>
-    </div>
-  </div>
+		<div class="w3-margin w3-container w3-leftbar w3-border-green w3-pale-green">
+		  <h2>Definition:</h2>
+		  <ul>
+			<li><strong>Meaningful Image:</strong> A meaningful image is one that conveys information that, if removed, would result in a loss of content or context (e.g., images of text or graphics, functional images used to initiate an action, or images that prompt a response). </li>
+			<li><strong>Decorative Image:</strong> An image is decorative if it does not add important or relevant information to the content of a page (e.g., decorative borders/spacers, used only for visual formatting or to increase a clickable area, or is sufficiently described by surrounding text).</li>
+		  </ul>
+		</div>
+	</div>
+	
+	<div class="w3-row">
+		<div class="w3-margin w3-container w3-leftbar w3-border-red w3-pale-red">
+		  <h2>Notes:</h2>
+		  <ul>
+			<li>An image that is on the page but not detected by ANDI as described in Identify Content should not be included in this test.</li>
+			<li>The ANDI Output is empty for an image that has role=” presentation” or aria-hidden=” true”. These cannot be set for meaningful images, which must have an equivalent description in ANDI Output.</li>
+		  </ul>
+		</div>
+	</div>
+	
+	<div class="w3-row">
+		<div class="w3-margin w3-container w3-leftbar w3-border-blue w3-pale-blue">
+		  <h2>Tips:</h2>
+		  <ul>
+			<li>If the ANDI Output contains a warning message or alert, then the Output is not considered blank/empty. ANDI only presents a blank ANDI Output when the element in question contains explicit code to specify a null result (e.g., aria-hidden="true", role="presentation", alt="").</li>
+			<li>ANDI will typically provide some warning or alert when the Accessible Name and Description computations return a null result due to lack of sufficient descriptive attributes.</li>
+			<li>Common applications of "font icons" use custom fonts combined with insertion of the custom font icons into the web page using the CSS psuedo-attributes <code>::before</code> and/or <code>::after</code>. Such icons may or may not be detected by ANDI as images, depending on other applied html attributes. Content inserted into the web page using CSS psuedo-attributes <code>::before</code> and  <code>::after</code> are tested under Test ID 15.A, 1.3.1-meaningful-content-css-before-after.</li>
+		  </ul>
+		</div>
+	</div>
 
   <!-- Pagination -->
   <div class="w3-center w3-padding-32">
     <div class="w3-bar">
-		<a class="w3-button w3-hover-indigo" href="3structure_2heading-det.html"><i class="fa fa-angle-double-left" aria-label="previous page"></i></a>
-		<a class="w3-button w3-hover-indigo" href="3structure_1heading.html">1<a>
-		<a class="w3-button w3-hover-indigo" href="3structure_2heading-det.html">2<a>
-		<a class="w3-button w3-indigo" href="3structure_3heading-lev.html">3<a>
-		<a class="w3-button w3-hover-indigo" href="3structure_4list.html">4<a>
-		<a class="w3-button w3-hover-indigo" href="3structure_4list.html" aria-label="next page">»</a>
+		<a class="w3-button w3-indigo" href="6images_1meaningful.html">1<a>
+		<a class="w3-button w3-hover-indigo" href="6images_2decorative.html">2<a>
+		<a class="w3-button w3-hover-indigo" href="6images_3background.html">3<a>
+		<a class="w3-button w3-hover-indigo" href="6images_4captcha.html">4<a>
+		<a class="w3-button w3-hover-indigo" href="6images_5text.html">5<a>
+		<a class="w3-button w3-hover-indigo" href="6images_2decorative.html" aria-label="next page">»</a>
     </div>
   </div>
 
