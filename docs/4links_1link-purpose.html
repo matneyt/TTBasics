@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-<title>Keyboard Testing</title>
+<title>Link Purpose</title>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="icon" href="images/NE_favicon.png">
@@ -26,9 +26,9 @@
   </a>
   <h4 class="w3-bar-item"><b>Menu</b></h4>
   <a class="w3-bar-item w3-button w3-hover-indigo" href="index.html">Introduction</a>
-  <a class="w3-bar-item w3-button w3-indigo" href="2keyboard_1keyboard.html">Keyboard</a>
+  <a class="w3-bar-item w3-button w3-hover-indigo" href="2keyboard_1keyboard.html">Keyboard</a>
   <a class="w3-bar-item w3-button w3-hover-indigo" href="3structure_1heading.html">Structure</a>
-  <a class="w3-bar-item w3-button w3-hover-indigo" href="4links_1link-purpose.html">Links</a>
+  <a class="w3-bar-item w3-button w3-indigo" href="4links_1link-purpose.html">Links</a>
   <a class="w3-bar-item w3-button w3-hover-indigo" href="5FormsIntro.html">Forms</a>
   <a class="w3-bar-item w3-button w3-hover-indigo" href="6images_1meaningful.html">Images</a>
 </nav>
@@ -41,27 +41,38 @@
 <div class="w3-main" style="margin-left:250px; margin-top:36px;">
 	<div class="w3-row" style="padding-top: 64px">
 		<div class="w3-margin w3-container w3-card">
-			<div class="w3-twothird w3-container">
-			  <h1>Keyboard Testing</h1>
-			  <ul>
-				<li>Remains a manual test process requiring interactive elements to be keyboard accessible</li>
-				<li>Requires exploration with a mouse to identify interactive elements (incl. drop-down menus, tool tips, form fields, hidden content, interactive elements)</li>
-				<li>Use of [TAB] and [SHIFT + TAB], arrow keys, and [ENTER] to navigate the keyboard</li>
-			  </ul>
-			</div>
-			<div class="w3-third w3-padding-16 w3-container">
-				<p><img src="images/nps.png" alt="Screenshot of National Park Service, Grand Canyon National Park home page" style="width:100%;"><p/>
-				<p><a href="https://www.nps.gov/grca/index.htm">https://www.nps.gov/grca/index.htm</a></p>
-			</div>
-		</div>
+			<h1>6.A, 2.4.4-link-purpose</h1>
+		  <table class="w3-table w3-margin-bottom">
+			<thead>
+				<tr class="w3-indigo">
+					<th class="w3-border w3-border-white">Test Name</th>
+					<th class="w3-border w3-border-white">Test ID</th>
+					<th class="w3-border w3-border-white">Test Condition</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr class="w3-border">
+					<td><strong>2.4.4-link-purpose</strong></td>
+					<td>6.A</td>
+					<td>The purpose of each link or button can be determined from any combination of the link/button text, accessible name, accessible description, and/or programmatically determined link/button context.</td>
+				</tr>
+			<tbody>
+		  </table>
+	  <h4>Evaluate Results:</h4>
+	  <p>If the following is <strong>TRUE</strong>, the content <strong>PASSES</strong>:</p>
+	  <ol>
+		<li>The combination of the programmatically determined link/button context and the ANDI Output provide adequate description of the link/button’s purpose.</li>
+	  </ol>
+    </div>
 	</div>
 	
 	<div class="w3-row">
     <div class="w3-margin w3-container w3-leftbar w3-border-blue w3-pale-blue">
       <h2>Tips:</h2>
       <ul>
-		<li>Include any changes to functionality that occur automatically or due to interaction with the page.</li>
-		<li>Information is considered essential or required when it is necessary to execute an action or understand information and relationships.</li>
+		<li>Considering the surrounding context of the link is different than the previous version of Trusted Tester. It is no longer necessary to evaluate the text of the link or button alone and/or for the link/button text to be entirely unique, as long as the surrounding context provides sufficient detail.</li>
+		<li>It may be necessary to use other ANDI modules and features to successfully complete this test (e.g., tables, structure > lists, structure > headings).  For example, headings may also be used to distinguish buttons/links with the same name. Familiarize yourself with the other Test Conditions.</li>
+		<li>When links and buttons change (or their "states" change), use the "Refresh ANDI" button <img src="images/reload.png" style="background:black;height:24px;" role="presentation"></img> to evaluate the new information for the link/button.</li>
 	  </ul>
     </div>
   </div>
@@ -69,17 +80,9 @@
   <!-- Pagination -->
   <div class="w3-center w3-padding-32">
     <div class="w3-bar">
-		<a class="w3-button w3-indigo" href="2keyboard_1keyboard.html">1<a>
-		<a class="w3-button w3-hover-indigo" href="2keyboard_2keyboard-access.html">2<a>
-		<a class="w3-button w3-hover-indigo" href="2keyboard_3keystroke-timing.html">3<a>
-		<a class="w3-button w3-hover-indigo" href="2keyboard_4keyboard-trap.html">4<a>
-		<a class="w3-button w3-hover-indigo" href="2keyboard_5focus-visible.html">5<a>
-		<a class="w3-button w3-hover-indigo" href="2keyboard_6on-focus.html">6<a>
-		<a class="w3-button w3-hover-indigo" href="2keyboard_7focus-order.html">7<a>
-		<a class="w3-button w3-hover-indigo" href="2keyboard_8focus-order-reveal.html">8<a>
-		<a class="w3-button w3-hover-indigo" href="2keyboard_9focus-order-return.html">9<a>
-		<a class="w3-button w3-hover-indigo" href="2keyboard_10exam-tips.html">10<a>
-		<a class="w3-button w3-hover-indigo" href="2keyboard_2keyboard-access.html" aria-label="next page">»</a>
+		<a class="w3-button w3-indigo" href="4links_1link-purpose.html">1<a>
+		<a class="w3-button w3-hover-indigo" href="4links_2change.html">2<a>
+		<a class="w3-button w3-hover-indigo" href="4links_2change.html" aria-label="next page">»</a>
     </div>
   </div>
 
