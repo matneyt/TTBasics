@@ -1,170 +1,25 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
 <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Adoption Application</title>
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="../w3-modified.css">
+<link rel="stylesheet" href="getapet.css">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-<style>
-  .text-outline {
-	text-shadow:
-		-1px -1px 0 #000,
-		1px -1px 0 #000,
-		-1px 1px 0 #000,
-		1px 1px 0 #000;
-}
-body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
-body, html {
-  height: 100%;
-  line-height: 1.8;
-}
-/* Full height image header */
-.bgimg-1 {
-  background-position: center;
-  background-size: cover;
-  background-image: url("DemoPage/images/adorable-animal-blurred-background-289252.jpg");
-  min-height: 100%;
-}
-.w3-bar .w3-button {
-  padding: 16px;
-}
-body {
-  font-family: Arial;
-  font-size: 17px;
-  padding: 8px;
-}
-* {
-  box-sizing: border-box;
-}
-.row {
-  display: -ms-flexbox; /* IE10 */
-  display: flex;
-  -ms-flex-wrap: wrap; /* IE10 */
-  flex-wrap: wrap;
-  margin: 0 -16px;
-}
-.col-25 {
-  -ms-flex: 25%; /* IE10 */
-  flex: 25%;
-}
-.col-50 {
-  -ms-flex: 50%; /* IE10 */
-  flex: 50%;
-}
-.col-75 {
-  -ms-flex: 75%; /* IE10 */
-  flex: 75%;
-}
-.col-25,
-.col-50,
-.col-75 {
-  padding: 0 16px;
-}
-.container {
-  background-color: #f2f2f2;
-  padding: 5px 20px 15px 20px;
-  border: 1px solid lightgrey;
-  border-radius: 3px;
-}
-input[type=text] {
-  width: 100%;
-  margin-bottom: 20px;
-  padding: 12px;
-  border: 1px solid #ccc;
-  border-radius: 3px;
-}
-label {
-  margin-bottom: 10px;
-  display: block;
-}
-.icon-container {
-  margin-bottom: 20px;
-  padding: 7px 0;
-  font-size: 24px;
-}
-.btn {
-  background-color: #258829;
-  color: white;
-  padding: 12px;
-  margin: 10px 0;
-  border: none;
-  width: 100%;
-  border-radius: 3px;
-  cursor: pointer;
-  font-size: 17px;
-}
-.btn:hover {
-  background-color: #45a049;
-}
-a {
-  color: #006fcc;
-}
-hr {
-  border: 1px solid lightgrey;
-}
-span.price {
-  float: right;
-  color: black;
-}
-/* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other (also change the direction - make the "cart" column go on top) */
-@media (max-width: 800px) {
-  .row {
-    flex-direction: column-reverse;
-  }
-  .col-25 {
-    margin-bottom: 20px;
-  }
-}
-.collapsible {
-  background-color: #777;
-  color: white;
-  cursor: pointer;
-  padding: 18px;
-  width: 100%;
-  border: none;
-  text-align: left;
-  outline: none;
-  font-size: 15px;
-}
-
-.active, .collapsible:hover {
-  background-color: #006ecb;
-}
-.collapsible:focus {background-color: #006ecb;}
-.collapsible:after {
-  content: '\002B';
-  color: white;
-  font-weight: bold;
-  float: right;
-  margin-left: 5px;
-}
-
-.active:after {
-  content: "\2212";
-}
-
-.content {
-  padding: 0 18px;
-  max-height: 0;
-  overflow: hidden;
-  transition: max-height 0.2s ease-out;
-  background-color: #f1f1f1;
-}
-</style>
 </head>
 <body>
 <!-- Navbar (sit on top) -->
 <div class="w3-top">
   <div class="w3-bar w3-white w3-card" id="myNavbar">
-    <img src="GetAPet_logo.png">
+    <a href="index.html" class="w3-bar-item w3-button w3-wide"><img src="images/GetAPet_logo.png"></a>
     <!-- Right-sided navbar links -->
     <div class="w3-right w3-hide-small">
-      <a href="#about" class="w3-bar-item w3-button">ABOUT</a>
-      <a href="#success" class="w3-bar-item w3-button"><i class="fa fa-user"></i> SUCCESS STORIES</a>
-      <a href="#costs" class="w3-bar-item w3-button"><i class="fa fa-usd"></i> ADOPTION COSTS</a>
-      <a href="#request" class="w3-bar-item w3-button"><i class="fa fa-envelope"></i> REQUEST INFO</a>
+      <a href="index.html#about" class="w3-bar-item w3-button">ABOUT</a>
+      <a href="index.html#success" class="w3-bar-item w3-button"><i class="fa fa-user"></i> SUCCESS STORIES</a>
+      <a href="index.html#costs" class="w3-bar-item w3-button"><i class="fa fa-usd"></i> ADOPTION COSTS</a>
+      <a href="index.html#request" class="w3-bar-item w3-button"><i class="fa fa-envelope"></i> REQUEST INFO</a>
     </div>
     <!-- Hide right-floated links on small screens and replace them with a menu icon -->
 
@@ -192,33 +47,11 @@ span.price {
  <p>Take me to <a href="#Bill"> Billing section</a></p>
   <p>Take me to <a href="#Cart"> my cart </a></p>
 </div>
-<script>
-var coll = document.getElementsByClassName("collapsible");
-var i;
 
-for (i = 0; i < coll.length; i++) {
-  coll[i].addEventListener("click", function() {
-    this.classList.toggle("active");
-    var content = this.nextElementSibling;
-    if (content.style.maxHeight){
-      content.style.maxHeight = null;
-    } else {
-      content.style.maxHeight = content.scrollHeight + "px";
-    } 
-  });
-}
-</script>
 	<h2><strong>Form A-1 version 2019</strong></h2>
 <p>If you are interested in adopting a pet, please complete the application below.</p>
 	<p tabindex="-1">Select the link to learn <a href="https://www.petsafe.net/learn/essential-tips-for-first-time-pet-owners" id="pet"> tips and tricks</a> to care for your rescue!</p>
 
-<script>
-var el = document.getElementById('pet');
-el.onfocus = showpet;
-function showpet() {
-window.open('https://www.petsafe.net/learn/essential-tips-for-first-time-pet-owners','mywindow').focus();
-}
-</script>
 <div class="row">
   <div class="col-75">
     <div class="container">
@@ -247,29 +80,16 @@ window.open('https://www.petsafe.net/learn/essential-tips-for-first-time-pet-own
    <input type="text" id="zip" tabindex="2" name="zip" placeholder="10001"></fieldset>
         <fieldset> <legend> <h4>Is your residence a rental?:</h4></legend>
 
-<script type="text/javascript">
-    function ShowHideDiv(Res2) {
-        var check = document.getElementById("check");
-        check.style.display = Res2.checked ? "block" : "none";
-    }
-</script>
+
 <label for="Res">
-  <input type="checkbox" tabindex="0" name="a1" value="Yes" id="Res" onclick="myFunction()"> Yes!<br>
+  <input type="checkbox" tabindex="0" name="a1" value="Yes" id="Res" onclick="openHumane()"> Yes!<br>
  <label for="Res2"> <input type="checkbox" tabindex="0" name="a2" id="Res2" value="No" onclick="ShowHideDiv(this)"> No. <br></fieldset>
  <hr />
 <div id="check" style="display: none">
     Awesome! Continue filling out this adoption form!</div>
 
-  
-  <script>
-function myFunction() {
-  window.open("https://www.humanesociety.org/resources/information-renters-pets");
-}
-</script>
-
-
 <br>
-                <h4> There is an adoption form fee of $15.</h4>
+                <h4> There is an adoption application processing fee of $15.</h4>
                 </div>
                 </div>
 
@@ -346,7 +166,7 @@ function myFunction() {
 </div>
 <!-- Footer -->
 <footer class="w3-center w3-black w3-padding-64">
-  <a href="#home" class="w3-button w3-light-grey"><i class="fa fa-arrow-up w3-margin-right"></i>To the top</a>
+  <a href="#" class="w3-button w3-light-grey"><i class="fa fa-arrow-up w3-margin-right"></i>To the top</a>
   <div class="w3-xlarge w3-section">
     <i class="fa fa-facebook-official w3-hover-opacity"></i>
     <i class="fa fa-instagram w3-hover-opacity"></i>
@@ -357,29 +177,7 @@ function myFunction() {
   </div>
 </footer>
  
-<script>
-// Modal Image Gallery
-function onClick(element) {
-  document.getElementById("img01").src = element.src;
-  document.getElementById("modal01").style.display = "block";
-  var captionText = document.getElementById("caption");
-  captionText.innerHTML = element.alt;
-}
-// Toggle between showing and hiding the sidebar when clicking the menu icon
-var mySidebar = document.getElementById("mySidebar");
-function w3_open() {
-  if (mySidebar.style.display === 'block') {
-    mySidebar.style.display = 'none';
-  } else {
-    mySidebar.style.display = 'block';
-  }
-}
-// Close the sidebar with the close button
-function w3_close() {
-    mySidebar.style.display = "none";
-}
-</script>
-
+<script src="getapet.js" type="text/javascript"></script>
 
 </body>
 </html>
