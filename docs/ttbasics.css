@@ -25,6 +25,16 @@ html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif;}
 	background-color: #e0e0eb!important;
 }
 
+.sample {
+	border: solid #3f51b5 6px;
+}
+
+.screenshot {
+	width: 100%;
+	max-width: 700px;
+	border: solid #3f51b5 3px;
+}
+
 .logo {
 	max-width: 300px;
 	height:auto;
