@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<title>4A, 2.1.1-keyboard-access</title>
+<title>Keyboard Access and Focus Examples</title>
 <style>
 table {
   font-family: arial, sans-serif;
@@ -36,8 +36,8 @@ tr:nth-child(even) {
 <li><fieldset> <legend>Phone Number</legend>
 <label for="P3">(area code): <input type="text" name="PN3" id="P3" size="3" maxlength="3"> <label for="P4">(3 digits): <input type="text" name="P4" id="PN8" size="3" maxlength="3"> 
 <label for="P5">(4 digits): <input type="text" name="PN5" id="P5" size="4" maxlength="4"></fieldset></li><br><br>
-<li><label for="J5">Jibberish <input type="text" id="J5" name="J5" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"></li><br><br></ol>
-<input type="submit" value="Submit" tabindex="-1">
+<li><label for="J5">Jibberish <input type="text" id="J5" name="J5" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" onfocus="myOnFocus()"></li><br><br></ol>
+<input type="submit" value="Submit" tabindex="-1"">
 </form>
 <br>
 <br>
@@ -45,7 +45,7 @@ tr:nth-child(even) {
 
 <table>
   <tr>
-    <th  
+    <th></th>  
     <th scope="col">Contact</th>
     <th scope="col">Country</th>
   </tr>
@@ -66,5 +66,15 @@ tr:nth-child(even) {
   </tr>
  
 </table>
+
+<div style="margin-top:64px;border-top:solid black 3px;padding-top:24px;">
+	<iframe src="https://docs.google.com/forms/d/e/1FAIpQLScSf9f_Hiy5KEf0SnImtnc_Erz4J5mZmBzSGDjITdpUF8_IOg/viewform?embedded=true" width="640" height="554" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+</div>
+
+<script>
+function myOnFocus() {
+    window.open("https://www.w3.org/WAI/WCAG21/Understanding/on-focus.html");
+}
+</script>
 
 </html>
