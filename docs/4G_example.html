@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Keyboard Focus Order Example</title>
+	<meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="samples/bootstrap.css">
+	<style>
+		.moveFocus {
+			position:absolute;
+			overflow:hidden;
+			width:1px;
+			height:1px;
+			margin:-1px;
+			padding:0
+		}
+	</style>
+</head>
+<body>
+<!-- main -->
+    <main class="container" id="main-contentP2">
+        <div class="text-center" id="reqAudit">
+            <h1 id="gardens" tabindex="-1">How Does Your Garden Grow?</h1>
+            <h1>Type of garden desired</h1>
+		<P> (All fields are required)</P>
+        </div>
+
+        <form class="form-con section" method="post" id="form-register">
+            <div class="form-group">
+                <div class="field-Con">
+                    <label for="field1">Last Name</label>
+                    <input tabindex="3" type="text" class="form-control" id="field1">
+                </div>
+                <div class="field-Con">
+                    <label for="field2">First Name</label>
+                    <input tabindex="1" type="text" class="form-control" id="field2">
+                </div>
+            </div>
+            <div class="form-group">
+                <div class="field-Con">
+                    <label for="field3">Email (name@address)</label>
+                    <input tabindex="2" type="email" class="form-control" id="field3">
+                </div>
+                <div class="field-Con">
+                    <label for="field4">Cell Phone (###.###.####)</label>
+					<input tabindex="-1" type="text" class="form-control" id="field4">                    
+                </div>
+            </div>
+            <div class="form-group">
+                <div class="field-Con">
+					<a href="#" tabindex="0" class="moveFocus"></a>
+                    <label for="field5">Street Address</label>
+                    <input tabindex="0" type="text" class="form-control keyboardTrap" id="field5">
+                </div>
+                
+            
+             <div class="field-Con">
+                    <label for="field6">City</label>
+                    <input tabindex="0" type="text" class="form-control" id="field6">
+                </div>
+	<div class="form-group">
+                <div class="field-Con">
+                    <label class="red" for="field7">State</label>
+                    <input tabindex="0" type="text" class="form-control keyboardTrap" id="field7">
+					<a href="#" tabindex="0" class="moveFocus"></a>
+                </div>
+               
+                <div class="field-Con">
+                    <label for="field9">Zipcode (#####)</label>
+                    <input tabindex="0" type="text" class="form-control" id="field9">
+                </div>
+            </div>
+
+            <fieldset class="radio-fieldSet">
+                <legend class="red radio-legend">Preliminary Budget</legend>
+                <div class="radio-options">
+                    <label for="r1a">$250 or less</label>
+                    <input tabindex="0" type="radio" id="r1a" name="budget" value="radio">
+                </div>
+                <div class="radio-options">
+                    <label for="r1b">$251- $750</label>
+                    <input type="radio" id="r1b" name="budget" value="radio">
+                </div>
+                <div class="radio-options">
+                    <label for="r1c">$751 - $2000</label>
+                    <input type="radio" id="r1c" name="budget" value="radio">
+                </div>
+                <div class="radio-options">
+                    <label for="r1d">Over $2000</label>
+                    <input type="radio" id="r1d" name="budget" value="radio">
+                </div>
+            </fieldset>
+            <div class="form-group">
+                <label class="padRight50" for="field10">Preferred method of contact</label>
+                <select tabindex="0" class="options-con" id="field10">
+                    <option value="Phone">Phone</option>
+                    <option value="Email">Email</option>
+                </select>
+            </div>
+            <div class="superCertified section">
+				<fieldset style="display: inline;" >
+					<div id="superCert_message"></div>
+					<div>
+						<h3><label for="super">Superior Garden Options</h3> 
+						<p> <b>Selecting this checkbox will expand additional details below.</b>
+						<input type="checkbox" id="super" onclick="toggleHidden('superCertified-ID', true);">
+						</p>
+					</div>
+				</fieldset>
+            </div>
+            <div class="superCert-outline section" id="superCertified-ID" style="display:none;">
+                <fieldset class="superCertified-questions section">
+                    <legend>What amenities are you hoping to add? (Check all that apply.)</legend>
+                    <div class="checkbox-con">
+                        <div class="checkbox-options">
+                            <label for="cha">Tennis Court</label>
+                            <input type="checkbox" id="cha" onclick="handleCheckLink()">
+                        </div>
+                        <div class="checkbox-options">
+                            <label for="chb">Fountain</label>
+                            <input type="checkbox" id="chb" tabindex="0">
+                        </div>
+                        <div class="checkbox-options">
+                            <label for="chc">Outside Showers</label>
+                            <input type="checkbox" id="chc" tabindex="0">
+                        </div>
+                        <div class="checkbox-options">
+                            <label for="chd">Stone Paths</label>
+                            <input type="checkbox" id="chd" tabindex="0">
+                        </div>
+                        <div class="checkbox-options">
+                            <label for="che">Other</label>
+                            <input type="checkbox" id="che" tabindex="0">
+                        </div>
+                    </div>
+                </fieldset>
+                <div class="superCertified-questions2">
+                    <fieldset class="scq2-fieldset">
+                        <legend>Are you hoping to begin your project within 6 months?</legend>
+                        <div class="radio-groupCon">
+                            <div class="radio-group1">
+                                <label for="r2a">Yes</label>
+                                <input type="radio" id="r2a" name="r2">
+                            </div>
+                            <div class="radio-group2">
+                                <label for="r2b">No</label>
+                                <input type="radio" id="r2b" name="r2">
+                            </div>
+                        </div>
+                    </fieldset>
+                    <fieldset class="scq2-fieldset">
+                        <legend>Have you contacted Miss Utility to mark buried cables?</legend>
+                        <div class="radio-groupCon">
+                            <div class="radio-group1">
+                                <label for="r3a">Yes</label>
+                                <input type="radio" id="r3a" name="r3">
+                            </div>
+                            <div class="radio-group2">
+                                <label for="r3b">No</label>
+                                <input type="radio" id="r3b" name="r3">
+                            </div>
+                        </div>
+                    </fieldset>
+                </div>
+            </div>
+			
+		<div style="margin-top:64px;border-top:solid black 3px;padding-top:24px;">
+			<iframe src="https://docs.google.com/forms/d/e/1FAIpQLScSf9f_Hiy5KEf0SnImtnc_Erz4J5mZmBzSGDjITdpUF8_IOg/viewform?embedded=true" width="640" height="554" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+		</div>
+		
+	</main>
+
+<script src="samples/jquery.min.js"></script>
+    <script src="samples/bootstrap.min.js"></script>
+    <script src="samples/main.js"></script>
+    <script src="samples/jquery-confirm.min.js"></script>
+    <script>
+		createVideoEndListener('video2','vidplay');
+		handlePage2Audio(true);
+		
+		function superCert_message() {
+			if (document.getElementById("super").checked) {
+				document.getElementById('superCert_message').innerHTML = 'Super-certification is very competitive, and a follow-up email is recommended for serious applicants';
+			}
+		}
+		
+		// Script with page timeout function
+		$.sessionTimeout({
+			keepAliveUrl: 'page3_main.php',
+			logoutUrl: 'do_not_test.html',
+			redirUrl: 'page3_main.php?KeyID=2186',
+            message: 'This page will timeout in 20 seconds.<br />Select any key to remain on this page and complete the form.',
+			warnAfter: 60000, // 1 minute
+			redirAfter: 80000, // 80 seconds
+			countdownBar: true
+		});
+
+		function handleCheckLink() {
+		  // once the checkbox is clicked, a link to another window will open
+		  var cha = document.getElementById("cha").checked;
+		  var chb = document.getElementById("chb").checked;
+		  var chc = document.getElementById("chc").checked;
+		  var chd = document.getElementById("chd").checked;
+		  var che = document.getElementById("che").checked;
+
+		}
+		
+		function openCaptcha() {
+		  // unhides an element
+		  document.getElementById("captcha-block").style.display = "block";
+		}
+		
+		function closeCaptcha() {
+		  document.getElementById("captcha-block").style.display = "hidden";
+		}
+		
+		function openTranscript(pageNum) {
+		  // opens the html transcript with the name given
+		  var fullName = "transcript_" + pageNum + ".html";
+		  window.open(fullName);
+		}
+
+	</script>
+    
+    <script>
+        // When pressing enter on the inputs the form automatically submits. This should stop that form hapenning
+        // var form1 = document.getElementById("form-register");
+        // form1.addEventListener("keypress",function(e){
+        //     if((e.path[0].type !== "button") && (e.path[0].type !== "submit")){
+        //         console.log(e.path[0].type)
+
+        //         if(e.keyCode === 13) { 
+        //             console.log("go");
+        //             e.preventDefault(); return false; 
+        //         }}
+        // });
+       
+
+
+        // $('form-register').on('submit', function (e) {
+        //     e.preventDefault();
+        //     e.stopPropagation(); // only neccessary if something above is listening to the (default-)event too
+
+        // });
+
+    </script>
+
+
+	<script>
+		function confirmation() {
+		  // this function is for the confirmation process for page 3. It handles the confirmation alerts for all the inputs
+
+		  var submitOK = "true";
+		  var submitNow = confirm("Are you sure the information you have provided is correct?");
+
+		  // User is ready to submit, so check the values
+		  if (submitNow == true) {
+			var field1 = document.getElementById("field1").value;
+			var field2 = document.getElementById("field2").value;
+			var field3a = document.getElementById("field3").value;
+			var field3b = document.getElementById("field3").value.indexOf("@");
+			var field4 = document.getElementById("field4").value;
+			var field5 = document.getElementById("field5").value;
+			var field7 = document.getElementById("field7").value;
+			var field8 = document.getElementById("field8").value;
+			var field9 = document.getElementById("field9").value;
+			var field11 = document.getElementById("field11").value;
+			var field11Tag = document.getElementById("field11");
+
+			if (field1.length < 1) {
+			  alert("You must specify a Company Name");
+			  submitOK = "false";
+			}
+
+			if (field2.length < 1) {
+			  alert("You must specify a Contact Name");
+			  submitOK = "false";
+			}
+
+			if (field3a.length < 1) {
+			  alert("You must specify Email");
+			  submitOK = "false";
+			} else if (field3b == -1) {
+			  alert("Email must be in the following format: name@address");
+			  submitOK = "false";
+			}
+
+			if (field4.length < 1) {
+			  alert("You must specify Phone Number");
+			  submitOK = "false";
+			} else if (!(field4.match(/^([0-9]{3})[-]([0-9]{3})[-]([0-9]{4})$/))) {
+			  alert("Phone number must be in the following format: ###-###-####");
+			  submitOK = "false";
+			}
+
+			if (field5.length < 1) {
+			  alert("You must specify Address Line 1");
+			  submitOK = "false";
+			}
+
+			if (field7.length < 1) {
+			  alert("You must specify State");
+			  submitOK = "false";
+			}
+
+			if (field8.length < 1) {
+			  alert("You must specify City");
+			  submitOK = "false";
+			}
+
+			if (field9.length < 1) {
+			  alert("You must specify Zip");
+			  submitOK = "false";
+			} else if (!(field9.match(/^([0-9]{5})$/))) {
+			  alert("Zip must be in the following format: #####");
+			  submitOK = "false";
+			}
+
+			// rb1 is short for radio button 1
+			var rb1a = document.getElementById("r1a").checked;
+			var rb1b = document.getElementById("r1b").checked;
+			var rb1c = document.getElementById("r1c").checked;
+			var rb1d = document.getElementById("r1d").checked;
+
+			if (rb1a == false && rb1b == false && rb1c == false && rb1d == false) {
+			  alert("You must specify Number of Employees");
+			  submitOK = "false";
+			}
+
+			if (field11Tag.value.length < 1) {
+			  alert("You must answer the captcha question");
+			  submitOK = "false";
+			} else if ((field11Tag.value.trim() === "G1MF4" || field11Tag.value.trim() === "g1mf4") === false) {
+			  alert("You must specify the correct captcha");
+			  field11 = field11Tag.value;
+			  submitOK = "false";
+			}
+			//console.log("Submit Button is equal to ", submitOK);
+			// Issues found, so return the user back to the page to fix.
+			
+
+			if (submitOK == "false") {
+			  // Fix issues
+			  return false;
+			} else {
+			  // Send data and go to another page.
+			  // debugger;
+			  alert("Sending data");
+			  // document.getElementById("form-register").submit();
+			  location.replace("do_not_test_4.html");
+			  return false;
+			}
+		  } else {
+			return false;
+		  }
+		}
+		
+		$(document).ready(function(){
+		  $('.moveFocus').on('focus',function(){
+			$('.keyboardTrap:first').focus();
+		  });
+		});
+		
+		$(document).ready(function(){
+		  $('#super').on('click',function(){
+			$('.keyboardTrap:first').focus();
+		  });
+		});
+	</script>
+
+</body>
+</html>
