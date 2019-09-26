@@ -15,14 +15,14 @@
 
 
 		<form id="equip-register">
-		<input type="checkbox" name="vehicle1" value="Bobcat"> Bobcat<br>
-		<input type="checkbox" name="vehicle2" value="Backhoe"> Backhoe<br>
-		<input type="checkbox" name="vehicle3" value="PostHoleDigger" checked> Post Hole Digger<br>
+			<label for="bob"><input type="checkbox" id="bob" name="vehicle1" title="Type of equipment needed" value="Bobcat"> Bobcat</label><br>
+		<label for="back"><input type="checkbox" id="back" name="vehicle2"  title="Type of equipment needed" value="Backhoe"> Backhoe</label><br>
+		<label for="post"><input type="checkbox" id="post" name="vehicle3" title="Type of equipment needed" value="PostHoleDigger" checked> Post Hole Digger</label><br>
 		</form>
 
-		<p>Select the checkbox below if you have a budget.</p>
+		<p>Select the checkbox below if you have a budget.</p><label for="myCheck">
 
-		Budget?<input type="checkbox" id="myCheck"  onclick="myFunction()">
+		Budget?</label><input type="checkbox" id="myCheck"  onclick="myFunction()">
 
 		<p id="text" style="display:none">We can work with any budget over 6K!</p>
 
@@ -50,9 +50,11 @@
 		<li>red bud </li>
 		<li>violets </li>
 		</dl>
-		<iframe height="450px" width="40%" border="none" src="demo_iframe.html"></iframe>
+		<iframe height="450px" width="40%" border="none" title="Zinnias" src="demo_iframe.html"></iframe>
 	</div>
-
+<div style="margin-top:64px;border-top:solid black 3px;padding-top:24px;">
+<iframe src="https://docs.google.com/forms/d/e/1FAIpQLScSf9f_Hiy5KEf0SnImtnc_Erz4J5mZmBzSGDjITdpUF8_IOg/viewform?embedded=true" width="640" height="554" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+</div>
 
 </body>
 </html>
