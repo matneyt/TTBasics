@@ -14,7 +14,7 @@
 * **DONE** BROKEN EXAMPLE of 4.G - create failures there for 4.F and 4.H https://github.com/drewnielson/TTBasics/blob/master/docs/4G%20class%20example.txt
   * **DONE** Added failure for 4.F in first three form fields 
   * **DONE** Added failure for 4.G, and 4.H to the "Selecting this checkbox will expand..." button
-* Topic 10 sample https://github.com/drewnielson/TTBasics/tree/master/docs/10structure_demo
+* **DONE** Topic 10 sample https://github.com/drewnielson/TTBasics/tree/master/docs/10structure_demo
 
 **NEW ITEMS ON THE LIST**
 * TOPIC 4 - The Submit button for https://ttbasics.com/4.A_demo.html is working properly for not receiving keyboard focus, but it doesn't submit with mouse either. Can we add link to a page I added to the repository 4.A_demo_confirm ?  I just don't want to break that the Submit button is not keyboard accessible.
