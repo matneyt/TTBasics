@@ -9,7 +9,12 @@
 
 body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
 
-.noFocus {outline:0px}
+.noFocus {outline:0px;}
+
+.boldFocus:focus,.boldFocus:hover {
+	font-weight:700;
+	color: #cc5200;
+}
 
 body, html {
   height: 100%;
