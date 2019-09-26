@@ -17,5 +17,5 @@
 * **DONE** Topic 10 sample https://github.com/drewnielson/TTBasics/tree/master/docs/10structure_demo
 
 **NEW ITEMS ON THE LIST**
-* TOPIC 4 - The Submit button for https://ttbasics.com/4.A_demo.html is working properly for not receiving keyboard focus, but it doesn't submit with mouse either. Can we add link to a page I added to the repository 4.A_demo_confirm ?  I just don't want to break that the Submit button is not keyboard accessible.
-* TOPIC 10 - Page 4 add to first bullet "See: https://www.w3.org/TR/WCAG20-TECHS/H48.html would be renderd as shown in this sample" and create a link to 10.D_demo_confirm
+* **DONE** TOPIC 4 - The Submit button for https://ttbasics.com/4.A_demo.html is working properly for not receiving keyboard focus, but it doesn't submit with mouse either. Can we add link to a page I added to the repository 4.A_demo_confirm ?  I just don't want to break that the Submit button is not keyboard accessible.
+* **DONE** TOPIC 10 - Page 4 add to first bullet "See: https://www.w3.org/TR/WCAG20-TECHS/H48.html would be renderd as shown in this sample" and create a link to 10.D_demo_confirm
