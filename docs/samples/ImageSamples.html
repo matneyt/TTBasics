@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+	<meta charset="UTF-8">
+	<title>Image Examples</title>  
+	<link rel='stylesheet' href='../w3-modified.css'>
+	<link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css'>
+	<link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/material-design-icons/3.0.1/iconfont/material-icons.min.css'>
+
+	<style>
+		.dontclick {
+			  background-image: url("../images/DontClickTheRedButton.png");
+			  background-size: contain;
+			  background-repeat: no-repeat;
+			  height: 85px;
+			}
+			
+		.dontclick_text {
+			color: #D50000;
+			background-color: #FBE5D6;
+			border: solid #D50000 5px;
+			font-size: 28px;
+			padding: 16px;
+			font-weight: 800;
+			border-radius: 15px;
+		}
+
+		.mybutton {
+			  color: #FFFDE7;
+			  background-color: #D50000;
+			}
+
+		.container {
+			  padding: 20px;
+			}
+
+		.hideme, .hideme2 {
+			  display:none;
+			}
+
+		#ohno, #ohno2 {
+			  color: #D50000;
+			  font-weight: 800;
+			  font-size: 20px;
+			}	
+	</style>
+</head>
+
+<body>
+<div class="w3-container">
+	<h2 class="w3-text-indigo">Image Examples</h2>
+	<div class="w3-card-4 w3-third w3-container w3-margin">
+		<div><img src="../images/anger-angry-anxiety-897817.jpg" style="max-width:100%;width:100%;" class="w3-padding"></div>
+		<p>How do you suppose the person in this picture feels?</p>
+	</div>
+	<div class="w3-card-4 w3-third w3-container w3-margin">
+		<div><img src="../images/smiling_woman.png" style="max-width:100%;width:100%;" class="w3-padding" alt="young woman with bright, vibrant smile"></div>
+		<p>How do you suppose the person in this picture feels?</p>
+	</div>
+</div>
+<div class="w3-container">
+	<div class="w3-card-4 w3-third w3-container w3-margin">
+		<div><img src="../images/anger-angry-anxiety-897817.jpg" style="max-width:100%;width:100%;" class="w3-padding"></div>
+		<p>Depression and anxiety are a big problem in our country.</p>
+	</div>
+	<div class="w3-card-4 w3-third w3-container w3-margin">
+		<div><img src="../images/smiling_woman.png" style="max-width:100%;width:100%;" class="w3-padding" alt="" role="presentation"></div>
+		<p>Jill couldn't be happier about the experience she had with our company.</p>
+	</div>
+</div>
+
+<div class="w3-container">
+	<h2 class="w3-text-indigo">Images in Links/Buttons</h2>
+	<div class="w3-card-4 w3-third w3-container w3-padding">
+		<div class="w3-col s4">
+			<a href="#" class="w3-button"><i class="fas fa-play" aria-hidden="true"></i> Play</a>
+		</div>
+		<div class="w3-col s4">
+			<a href="#" class="w3-button"><i class="fas fa-play"></i></a>
+		</div>
+		<div class="w3-col s4">
+			<a href="#" class="w3-button"><i class="material-icons" role="img">play_arrow</i></a>
+		</div>
+		<div class="w3-col s4">
+			<a href="#" class="w3-button"><i class="material-icons" role="img" aria-label="Play">play_arrow</i></a>
+		</div>
+		<div class="w3-col s4">
+			<a href="#" class="w3-button"><i class="material-icons" role="img" aria-hidden="true">play_arrow</i> Play</a>
+		</div>
+		<div class="w3-col s4">
+			<button class="w3-button">
+				<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+					<path d="M0 0h24v24H0z" fill="none"/><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 14.5v-9l6 4.5-6 4.5z"/>
+				</svg>
+				 Play</button>
+		</div>
+		<div class="w3-col s4">
+			<button class="w3-hover-opacity w3-button" style="background-image:url('../images/play_circle.png');background-size:32px 32px;background-repeat:no-repeat;height:32px;"></button>
+		</div>
+		<div class="w3-col s4">
+			<button class="w3-hover-opacity w3-button" style="background-image:url('../images/play_circle.png');background-size:32px 32px;background-repeat:no-repeat;height:32px;" aria-label="Play"></button>
+		</div>
+		<div class="w3-col s4">
+			<button class="w3-hover-opacity w3-button" style="background-image:url('../images/play_circle.png');background-size:32px 32px;background-repeat:no-repeat;height:32px;" title="Play"></button>
+		</div>
+	</div>
+</div>
+
+<div class="w3-container w3-margin-top">
+	<h2 class="w3-text-indigo">More Image Examples</h2>
+	<div class="container w3-half">
+	<h3 class="w3-text-indigo">Friendly button?</h3>
+
+	  <div class="dontclick"></div>
+	  <div class="container">
+		<p>Here is a nice button you can click:</p>
+		<button id="click" class="w3-btn mybutton w3-button">Friendly Button</button>
+		<p id="ohno" class="hideme">Oh no, now you've gone and done it!!<p>
+	  </div>
+	  <div class="dontclick"></div>
+	</div>
+	<div class="container w3-half">
+	<h3 class="w3-text-indigo">Friendly button? (redux)</h3>
+
+	  <div class="dontclick_text">Whatever you do, don't click the red button!!!</div>
+	  <div class="container">
+		<p>Here is a nice button you can click:</p>
+		<button id="click2" class="w3-btn mybutton w3-button">Friendly Button</button>
+		<p id="ohno2" class="hideme2">Oh no, now you've gone and done it!!<p>
+	  </div>
+	  <div class="dontclick_text">Whatever you do, don't click the red button!!!</div>
+	</div>
+</div>
+
+<div class="w3-container w3-margin-top">
+	<h3 class="w3-text-indigo">Obvious Image of text</h3>
+	<div class="w3-container"><img src="../images/halloween.png" style="max-width:100%;"></div>
+</div>
+
+<div class="w3-container w3-margin-top">
+	<h3 class="w3-text-indigo">Image of text?</h3>
+	<div class="w3-container"><img src="../images/las-vegas-sign.jpg" style="width:700px;max-width:100%;"></div>
+</div>
+
+<div style="margin-top:64px;border-top:solid black 3px;padding-top:24px;">
+	<iframe src="https://docs.google.com/forms/d/e/1FAIpQLScSf9f_Hiy5KEf0SnImtnc_Erz4J5mZmBzSGDjITdpUF8_IOg/viewform?embedded=true" title="google poll" width="640" height="554" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+</div>
+
+<script src="jquery.min.js"></script>
+<script>
+	$("#click").click(function(){
+	  $("#ohno").toggleClass("hideme");
+	});
+	$("#click2").click(function(){
+	  $("#ohno2").toggleClass("hideme2");
+	});
+</script>
+</body>
+</html>
