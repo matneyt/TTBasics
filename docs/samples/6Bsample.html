@@ -15,6 +15,7 @@
 <body>
 
 <div class="w3-container w3-card w3-padding">
+	<h2>Button Example 1</h2>
 	<div class="w3-dropdown-click">
 	  <button onclick="myDrop()" class="w3-button w3-black" id="drop" aria-expanded="false">Click me for more links!</button>
 	  <div id="dropContent" class="w3-dropdown-content w3-bar-block w3-border">
@@ -27,8 +28,9 @@
 
 <div class="w3-container w3-padding"></div>
 
-<div class="w3-container w3-card w3-padding-64">
-	<p class="w3-hide w3-text-red" id="hideMe" style="margin-top:-50px;">Oh no! Close that dropdown menu!</p>
+<div class="w3-container w3-card w3-padding-16">
+	<h2>Button Example 2</h2>
+	<p class="w3-hide w3-text-red" id="hideMe">Oh no! Close that dropdown menu!</p>
 	<div class="w3-dropdown-click">
 	  <button onclick="myDrop2()" class="w3-button w3-black" id="drop2" aria-expanded="false">I'm a dropdown menu!</button>
 	  <div id="dropContent2" class="w3-dropdown-content w3-bar-block w3-border">
@@ -41,8 +43,9 @@
 
 <div class="w3-container w3-padding"></div>
 
-<div class="w3-container w3-card w3-padding-64">
-	<p class="w3-hide w3-text-red" id="hideMe3" style="margin-top:-50px;" tabindex="0">You just added some text to the screen. Click that button again to get rid of this text.</p>
+<div class="w3-container w3-card w3-padding-16">
+	<h2>Button Example 3</h2>
+	<p class="w3-hide w3-text-red" id="hideMe3" tabindex="0">You just added some text to the screen. Click that button again to get rid of this text.</p>
 	<div class="w3-dropdown-click">
 	  <button onclick="myDrop3()" class="w3-button w3-black" id="drop3" aria-expanded="false">Click to see what happens!</button>
 	</div>
@@ -50,7 +53,8 @@
 
 <div class="w3-container w3-padding"></div>
 
-<div class="w3-container w3-card w3-padding-64" id="drop4div">
+<div class="w3-container w3-card w3-padding-16" id="drop4div">
+	<h2>Button Example 4</h2>
 	<div class="w3-text-red" role="alert"><p class="w3-hide" id="hideMe4">That button made this text appear.</p></div>
 	<div class="w3-dropdown-click">
 	  <button onclick="myDrop4()" class="w3-button w3-black" id="drop4" aria-expanded="false">Give this button a go</button>
@@ -87,8 +91,6 @@ function myDrop3() {
 
 function myDrop4() {
   $("#hideMe4").toggleClass("w3-hide");
-  $("#drop4div").toggleClass("w3-padding-64");
-  $("#drop4div").toggleClass("w3-padding-16");
   var expand = $("#drop4").attr("aria-expanded");
   if (expand == "false") 
 	{$("#drop4").attr("aria-expanded","true");} else {$("#drop4").attr("aria-expanded","false");}
