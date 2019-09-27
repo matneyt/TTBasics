@@ -50,11 +50,15 @@
 
 <div class="w3-container w3-padding"></div>
 
-<div class="w3-container w3-card w3-padding-64">
+<div class="w3-container w3-card w3-padding-64" id="drop4div">
 	<div class="w3-text-red" role="alert"><p class="w3-hide" id="hideMe4">That button made this text appear.</p></div>
 	<div class="w3-dropdown-click">
 	  <button onclick="myDrop4()" class="w3-button w3-black" id="drop4" aria-expanded="false">Give this button a go</button>
 	</div>
+</div>
+
+<div style="margin-top:64px;border-top:solid black 3px;padding-top:24px;">
+	<iframe src="https://docs.google.com/forms/d/e/1FAIpQLScSf9f_Hiy5KEf0SnImtnc_Erz4J5mZmBzSGDjITdpUF8_IOg/viewform?embedded=true" title="google poll" width="640" height="554" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
 </div>
 
 <script src="jquery.min.js"></script>
@@ -83,14 +87,13 @@ function myDrop3() {
 
 function myDrop4() {
   $("#hideMe4").toggleClass("w3-hide");
+  $("#drop4div").toggleClass("w3-padding-64");
+  $("#drop4div").toggleClass("w3-padding-16");
   var expand = $("#drop4").attr("aria-expanded");
   if (expand == "false") 
 	{$("#drop4").attr("aria-expanded","true");} else {$("#drop4").attr("aria-expanded","false");}
 }
 
 </script>
-
-
 </body>
-
 </html>
