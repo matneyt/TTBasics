@@ -7,6 +7,7 @@
 <link rel="stylesheet" href="../w3-modified.css">
 <link rel="stylesheet" href="getapet.css">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+<link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/material-design-icons/3.0.1/iconfont/material-icons.min.css'>
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <link rel="icon" href="images/GetAPet_Favicon.png">
 </head>
@@ -46,20 +47,35 @@
     <span class="text-outline w3-jumbo w3-hide-small">Get a pet and change a life</span><br>
     <span class="text-outline w3-xxlarge w3-hide-large w3-hide-medium">Get a pet and change a life</span><br>
     <span class="text-outline w3-large">Adopt a pet, and you might find that the life you change is yours.</span>
-    <p><a href="#about" class="w3-button w3-white w3-padding-large w3-large w3-margin-top w3-hover-opacity-off">Learn more and get started today</a></p>
+    <p><a href="#process" class="w3-button w3-white w3-padding-large w3-large w3-margin-top w3-hover-opacity-off">Learn more and get started today</a></p>
   </div> 
   <div class="w3-display-bottomleft w3-text-grey w3-large" style="padding:24px 48px">
-    <i class="fa fa-facebook-official w3-hover-opacity"></i>
-    <i class="fa fa-instagram w3-hover-opacity"></i>
-    <i class="fa fa-snapchat w3-hover-opacity"></i>
-    <i class="fa fa-pinterest-p w3-hover-opacity"></i>
-    <i class="fa fa-twitter w3-hover-opacity"></i>
-    <i class="fa fa-linkedin w3-hover-opacity"></i>
+    <i class="fa fa-facebook-official w3-hover-opacity" onclick="openDummy()"></i>
+    <i class="fa fa-instagram w3-hover-opacity" onclick="openDummy()"></i>
+    <i class="fa fa-snapchat w3-hover-opacity" onclick="openDummy()"></i>
+    <i class="fa fa-pinterest-p w3-hover-opacity" onclick="openDummy()"></i>
+    <i class="fa fa-twitter w3-hover-opacity" onclick="openDummy()"></i>
+    <i class="fa fa-linkedin w3-hover-opacity" onclick="openDummy()"></i>
   </div>
 </header>
 
+<!-- Adoption Process -->
+<div id="process" class="w3-container" style="padding:64px 16px 32px" id="about">
+	<a href="JavaScript:Void(0);" class="w3-button w3-block w3-center" onclick="ShowHideSteps()"><h3 class="w3-center">ADOPTION PROCESS (click to expand)</h3></a>
+	<div id="steps" class="w3-panel w3-light-grey w3-hide" style="margin-top:0px;">
+		<ul style="list-style-type:none;">
+			<li><i class="material-icons" aria-hidden="true">looks_one</i> You fill out our <a href="adoption_form.html">Adoption Application Form</a>.</li>
+			<li><i class="material-icons" aria-hidden="true">looks_two</i> We'll review your application; review could take up to a week. (*Processing fee required*)</li>
+			<li><i class="material-icons" aria-hidden="true">looks_3</i> We'll contact you to setup a video conference session to discuss adoption options.</li>
+			<li><i class="material-icons" aria-hidden="true">looks_4</i> We'll provide you with a list of possible matches.</li>
+			<li><i class="material-icons" aria-hidden="true">looks_5</i> You prioritize the list of matches and submit your adoption preferences.</li>
+			<li><i class="material-icons" aria-hidden="true">looks_6</i> You decide which adoption services package is best for you and your new pet (aka family member).</li>
+		</ul>
+	</div>
+</div>
+
 <!-- About Section -->
-<div class="w3-container" style="padding:128px 16px" id="about">
+<div class="w3-container" style="padding:32px 16px" id="about">
   <h3 class="w3-center">ABOUT OUR COMPANY</h3>
   <p class="w3-center w3-large">Key characteristics that make a difference in the adoption process</p>
   <div class="w3-row-padding w3-center" style="margin-top:64px">
@@ -69,7 +85,7 @@
       <p>We're only a phone call away. Simply give us a ring any time you have a question or an issue, and we're ready to talk you through it.</p>
     </div>
     <div class="w3-quarter">
-      <i class="fa fa-heart w3-margin-bottom w3-jumbo"></i>
+      <i class="material-icons w3-margin-bottom w3-jumbo">favorite</i>
       <h4 class="w3-large">Passionate</h4>
       <p>We truly care for you and for your prospective pet. We are also passionate about providing a great experience throughout the adoption process.</p>
     </div>
@@ -85,8 +101,6 @@
     </div>
   </div>
 </div>
-
-
 
 <!-- Promo Section "Statistics" -->
 <div class="w3-container w3-row w3-center w3-dark-grey w3-padding-64">
@@ -145,7 +159,7 @@
     </div>
     <div class="w3-col l3 m6 w3-margin-bottom">
       <div class="w3-card">
-        <img src="images/animal-child-couple-2479350.jpg" alt="Billy and family with Spiffy" style="width:100%">
+        <img src="images/animal-child-couple-2479350.jpg" style="width:100%">
         <div class="w3-container">
           <h3>Billy (and family)</h3>
           <p class="w3-opacity">United with Spiffy</p>
@@ -168,7 +182,7 @@
 
 <!-- Pricing Section -->
 <div class="w3-container w3-center w3-dark-grey" style="padding:128px 16px" id="costs">
-  <h3>ADOPTION COSTS</h3>
+  <p style="font-family:'Raleway',sans-serif;font-size:30px;font-weight:400;margin:10px 0;">ADOPTION COSTS</p>
   <p class="w3-large">Choose an adoption package that fits your needs.</p>
   <div class="w3-row-padding" style="margin-top:64px">
     <div class="w3-third w3-section">
@@ -229,8 +243,10 @@
   <p class="w3-center w3-large">Lets get in touch. Send us a message:</p>
   <div style="margin-top:48px">
     <p><i class="fa fa-map-marker fa-fw w3-xxlarge w3-margin-right"></i> Washington, DC</p>
-    <p><i class="fa fa-phone fa-fw w3-xxlarge w3-margin-right"></i> Phone: +00 151515</p>
-    <p><i class="fa fa-envelope fa-fw w3-xxlarge w3-margin-right"> </i> Email: mail@mail.com</p>
+	<p><i class="fa fa-tty fa-fw w3-xxlarge w3-margin-right"></i> 202-555-5555</p>
+    <p><i class="fa fa-phone fa-fw w3-xxlarge w3-margin-right"></i> 202-555-1111</p>
+    <p><i class="fa fa-envelope fa-fw w3-xxlarge w3-margin-right"></i> mail@mail.com</p>
+	<p><i class="fa fa-exclamation-triangle fa-fw w3-xxlarge w3-margin-right"></i> Our business team is available 8-5, M-F</p>
     <br>
     <form action="/action_page.php" target="_blank">
       <p><input class="w3-input w3-border" type="text" placeholder="Name" required name="Name"></p>
@@ -239,7 +255,7 @@
       <p><input class="w3-input w3-border" type="text" placeholder="Message" required name="Message"></p>
       <p>
         <button class="w3-button w3-black" type="submit">
-          <i class="fa fa-paper-plane"></i> SEND MESSAGE
+          <i class="fa fa-paper-plane"></i>
         </button>
       </p>
     </form>
@@ -250,15 +266,17 @@
 <footer class="w3-center w3-black w3-padding-64">
   <a href="#home" class="w3-button w3-light-grey"><i class="fa fa-arrow-up w3-margin-right"></i>To the top</a>
   <div class="w3-xlarge w3-section">
-    <i class="fa fa-facebook-official w3-hover-opacity"></i>
-    <i class="fa fa-instagram w3-hover-opacity"></i>
-    <i class="fa fa-snapchat w3-hover-opacity"></i>
-    <i class="fa fa-pinterest-p w3-hover-opacity"></i>
-    <i class="fa fa-twitter w3-hover-opacity"></i>
-    <i class="fa fa-linkedin w3-hover-opacity"></i>
+    <a href="socialdummy.html#facebook" target="_blank" class="dummy"><i class="fa fa-facebook-official w3-hover-opacity w3-text-white"></i></a>
+    <a href="socialdummy.html#instagram" target="_blank" class="dummy"><i class="fa fa-instagram w3-hover-opacity w3-text-white"></i></a>
+    <a href="socialdummy.html#snapchat" target="_blank" class="dummy"><i class="fa fa-snapchat w3-hover-opacity w3-text-white"></i></a>
+    <a id="pinterest" class="dummy" href="JavaScript:Void(0);" onclick="dummyDown()"><i class="fa fa-pinterest-p w3-hover-opacity w3-text-white"></i></a>
+    <a id="twitter" href="socialdummy.html#twitter" target="_blank" class="dummy"><i class="fa fa-twitter w3-hover-opacity w3-text-white"></i></a>
+    <a href="socialdummy.html#linkedin" target="_blank" class="dummy"><i class="fa fa-linkedin w3-hover-opacity w3-text-white"></i></a>
   </div>
+  <div id="dummydown" style="padding-bottom:-40px;" class="w3-hide">Sorry - that social media site is currently down. Check back later to follow us there.</div>
 </footer>
  
+<script src="../samples/jquery.min.js"></script>
 <script src="getapet.js"></script>
 
 </body>
