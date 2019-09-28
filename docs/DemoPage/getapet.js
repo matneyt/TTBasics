@@ -25,6 +25,12 @@ function w3_close() {
 
 function ShowHideSteps(){
 	$('#steps').toggleClass('w3-hide');
+	var expand = $('#showprocess').attr('aria-expanded');
+	if (expand == 'false') {
+		$('#showprocess').attr('aria-expanded','true');
+		} else {
+		$('#showprocess').attr('aria-expanded','false');
+	}
 }
 
 function openHumane() {
