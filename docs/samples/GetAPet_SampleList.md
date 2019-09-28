@@ -17,13 +17,13 @@
  | x | 4.G  | 2.4.3-focus-order-reveal | Revealed content example that receive focus within one keystroke | 
  | x | 4.G  | 2.4.3-focus-order-reveal | Revealed content example that goes to top of page | 
  | x | 4.H | 2.4.3-focus-order-return | Close of revealed content that returns to logicl order | 
- |  | 4.H | 2.4.3-focus-order-return | Close of revealed content that goes to top of page | 
+ | x | 4.H | 2.4.3-focus-order-return | Close of revealed content that goes to top of page **DONE** | 
  | x | 10.A  | 2.4.6-heading-purpose | Descriptive Heading | 
  | X | 10.A  | 2.4.6-heading-purpose | Heading not descriptive **Changed "Contact" to "Heading" on main page** | 
  | x | 10.B | 1.3.1-heading-determinable | Programmed heading | 
  | x | 10.B | 1.3.1-heading-determinable | Text using heading for styling  purposes | 
  | x | 10.C | 1.3.1-heading-level | Heading levels correct | 
  | x | 10.C | 1.3.1-heading-level | Heading levels incorrect | 
- |  | 10.D | 1.3.1-list-type | Create steps to adopt ordered list and improperly identify (use numbers with <ul> | 
+ | x | 10.D | 1.3.1-list-type | Create steps to adopt ordered list and improperly identify (use numbers with `<ul>`) **DONE**| 
  | x | 10.D | 1.3.1-list-type | Unordered list properly identified | 
- |  | 10.D | 1.3.1-list-type | Description list properly identified (maybe shot discriptions) | 
+ |  | 10.D | 1.3.1-list-type | Description list properly identified (maybe short descriptions) | 

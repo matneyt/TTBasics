@@ -23,8 +23,20 @@ function w3_close() {
     mySidebar.style.display = "none";
 }
 
+function ShowHideSteps(){
+	$('#steps').toggleClass('w3-hide');
+}
+
 function openHumane() {
   window.open("https://www.humanesociety.org/resources/information-renters-pets");
+}
+
+function openDummy() {
+  window.open("socialdummy.html");
+}
+
+function dummyDown() {
+	$('#dummydown').toggleClass('w3-hide');
 }
 
 function ShowHideDiv(Res2) {
@@ -47,6 +59,7 @@ for (i = 0; i < coll.length; i++) {
     var content = this.nextElementSibling;
     if (content.style.maxHeight){
       content.style.maxHeight = null;
+	  $('#logo').focus();
     } else {
       content.style.maxHeight = content.scrollHeight + "px";
     } 
