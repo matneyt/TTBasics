@@ -21,16 +21,17 @@
 
 <!-- Sidebar -->
 <nav class="w3-sidebar w3-bar-block w3-collapse w3-large w3-theme-l5 w3-animate-left" id="mySidebar">
-  <a href="javascript:void(0)" onclick="w3_close()" class="w3-right w3-xlarge w3-padding-large w3-hover-indigo w3-hide-large" title="Close Menu">
-    <i class="fa fa-remove"></i>
-  </a>
+  <a href="javascript:void(0)" onclick="w3_close()" class="w3-right w3-xlarge w3-padding-large w3-hover-indigo w3-hide-large" title="Close Menu"><i class="fa fa-remove"></i></a>
   <h4 class="w3-bar-item"><b>Menu</b></h4>
-  <a class="w3-bar-item w3-button w3-hover-indigo" href="index.html">Introduction</a>
+  <a class="w3-bar-item w3-button w3-indigo" href="index.html">Introduction</a>
   <a class="w3-bar-item w3-button w3-hover-indigo" href="2keyboard_1keyboard.html">Keyboard</a>
   <a class="w3-bar-item w3-button w3-hover-indigo" href="3structure_1heading.html">Structure</a>
   <a class="w3-bar-item w3-button w3-hover-indigo" href="4links_1link-purpose.html">Links</a>
-  <a class="w3-bar-item w3-button w3-indigo" href="5FormsIntro.html">Forms</a>
+  <a class="w3-bar-item w3-button w3-hover-indigo" href="5FormsIntro.html">Forms</a>
   <a class="w3-bar-item w3-button w3-hover-indigo" href="6images_1meaningful.html">Images</a>
+  <a class="w3-bar-item w3-button w3-hover-indigo" href="sitemap.html" style="border-top: 3px solid #8080ff;margin-top:64px;">Site Map</a>
+  <a class="w3-bar-item w3-button w3-hover-indigo" href="TTProcess_5_annotated.pdf" target="_blank">TT Process 5.0 (PDF)</a>
+  <a class="w3-bar-item w3-button w3-hover-indigo" href="Application_results_sheet_v5.0-8_drft.xlsm">Results Report (Excel)</a>
 </nav>
 
 <!-- Overlay effect when opening sidebar on small screens -->
@@ -117,10 +118,11 @@
     </div>
   </div>
 
+<!-- Footer -->
   <footer id="myFooter">
     <div class="w3-container w3-theme-l2 w3-padding">
       <p>Introduction to Trused Tester Methods<br>ICT Accessibility Testing Symposium - October 2019</p>
-	  <p>Copyright (c) 2019 New Editions Consulting, Inc.</p>
+	  <p><i class="fa fa-copyright" aria-label="Copyright"></i> 2019 New Editions Consulting, Inc. | <a href="https://neweditions.net" style="text-decoration:none;">https://neweditions.net/</a></p>
     </div>
   </footer>
 
@@ -129,27 +131,7 @@
 </main>
 <!-- END MAIN -->
 
-<script>
-// Get the Sidebar
-var mySidebar = document.getElementById("mySidebar");
-// Get the DIV with overlay effect
-var overlayBg = document.getElementById("myOverlay");
-// Toggle between showing and hiding the sidebar, and add overlay effect
-function w3_open() {
-  if (mySidebar.style.display === 'block') {
-    mySidebar.style.display = 'none';
-    overlayBg.style.display = "none";
-  } else {
-    mySidebar.style.display = 'block';
-    overlayBg.style.display = "block";
-  }
-}
-// Close the sidebar with the close button
-function w3_close() {
-  mySidebar.style.display = "none";
-  overlayBg.style.display = "none";
-}
-</script>
+<script src="ttbasics.js"></script>
 
 </body>
 </html>
