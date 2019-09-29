@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<title>Introduction to Trusted Tester Methods Workshop</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="icon" href="images/NE_favicon.png">
+<link rel="stylesheet" href="w3-modified.css">
+<link rel="stylesheet" href="w3-theme-indigo-modified.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="ttbasics.css">
+<style>a{text-decoration:none;}</style>
+<body>
+
+<!-- Navbar -->
+<div class="w3-top">
+	<a href="#main-content" id="skipNavLink" class="visually-hidden visible-when-focused bypass-block-link" tabindex="1">Skip to Content</a>
+	<a class="w3-bar-item w3-button w3-right w3-hide-large w3-hover-white w3-large w3-theme-l1" href="javascript:void(0)" onclick="w3_open()"><i class="fa fa-bars"></i></a>
+    <a href="#" class="w3-bar-item w3-hide-small"><img src="images/NewEditions_white.png" alt="New Editions Consulting Inc. Company Logo" style="margin-left:10px;"></img></a>
+	<a href="#" class="w3-bar-item w3-hide-medium w3-hide-large"><img src="images/NewEditions_white_small.png" alt="New Editions Consulting Inc. Company Logo" style="margin-left:10px;"></img></a>
+</div>
+
+<!-- Sidebar -->
+<nav class="w3-sidebar w3-bar-block w3-collapse w3-large w3-theme-l5 w3-animate-left" id="mySidebar">
+  <a href="javascript:void(0)" onclick="w3_close()" class="w3-right w3-xlarge w3-padding-large w3-hover-indigo w3-hide-large" title="Close Menu">
+    <i class="fa fa-remove"></i>
+  </a>
+  <h4 class="w3-bar-item"><b>Menu</b></h4>
+  <a class="w3-bar-item w3-button w3-hover-indigo" href="index.html">Introduction</a>
+  <a class="w3-bar-item w3-button w3-hover-indigo" href="2keyboard_1keyboard.html">Keyboard</a>
+  <a class="w3-bar-item w3-button w3-hover-indigo" href="3structure_1heading.html">Structure</a>
+  <a class="w3-bar-item w3-button w3-hover-indigo" href="4links_1link-purpose.html">Links</a>
+  <a class="w3-bar-item w3-button w3-hover-indigo" href="5FormsIntro.html">Forms</a>
+  <a class="w3-bar-item w3-button w3-hover-indigo" href="6images_1meaningful.html">Images</a>
+  <a class="w3-bar-item w3-button w3-indigo" href="sitemap.html" style="border-top: 3px solid #8080ff;margin-top:64px;">Site Map</a>
+  <a class="w3-bar-item w3-button w3-hover-indigo" href="TTProcess_5_annotated.pdf" target="_blank">TT Process 5.0 (PDF)</a>
+  <a class="w3-bar-item w3-button w3-hover-indigo" href="Application_results_sheet_v5.0-8_drft.xlsm">Results Report (Excel)</a>
+</nav>
+
+<!-- Overlay effect when opening sidebar on small screens -->
+<div class="w3-overlay w3-hide-large" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
+
+<!-- Main content: shift it to the right by 250 pixels when the sidebar is visible -->
+<main id="main-content">
+<div class="w3-main" style="margin-left:250px; margin-top:36px;">
+
+  <div class="w3-row" style="padding-top: 64px">
+    <div class="w3-container w3-margin-top">
+      <h1>SITE MAP -- Introduction to Trusted Tester Methods Workshop</h1>
+    </div>
+  </div>
+
+  <div class="w3-row">
+    <div class="w3-container w3-third">
+      <h2>Course Introduction</h2>
+      <ul style="list-style-type:none;text-decoration:none;">
+		<li><a href="index.html">Workshop Introduction</a></li>
+		<li><a href="1intro_2origin.html">Originis of the Trusted Tester Course</a></li>
+		<li><a href="1intro_3evol.html">Trusted Tester Process - Old vs. New</a></li>
+		<li><a href="1intro_4hist.html">Historical comparison of the test process</a></li>
+		<li><a href="1intro_5benefits.html">Benefits of the new process</a></li>
+	  </ul>
+    </div>
+	
+	<div class="w3-container w3-third">
+      <h2>Keyboard Access and Focus</h2>
+      <ul style="list-style-type:none;">
+		<li><a href="2keyboard_1keyboard.html">Keyboard Testing</a></li>
+		<li><a href="2keyboard_2keyboard-access.html">4.A, 2.1.1-keyboard-access</a></li>
+		<li><a href="2keyboard_3keystroke-timing.html">4.B, 2.1.1-no-keystroke-timing</a></li>
+		<li><a href="2keyboard_4keyboard-trap.html">4.C, 2.1.2-no-keyboard-trap</a></li>
+		<li><a href="2keyboard_5focus-visible.html">4.D, 2.4.7-focus-visible</a></li>
+		<li><a href="2keyboard_6on-focus.html">4.E, 3.2.1-on-focus</a></li>
+		<li><a href="2keyboard_7focus-order.html">4.F, 2.4.3-focus-order-meaning</a></li>
+		<li><a href="2keyboard_8focus-order-reveal.html">4.G, 2.4.3-focus-order-reveal</a></li>
+		<li><a href="2keyboard_9focus-order-return.html">4.H, 2.4.3-focus-order-return</a></li>
+		<li><a href="2keyboard_10exam-tips.html">Topic 4, Keyboard and Focus - Exam Tips</a></li>
+	  </ul>
+    </div>
+	
+	<div class="w3-container w3-third">
+      <h2>Content Structure</h2>
+      <ul style="list-style-type:none;">
+		<li><a href="3structure_1heading.html">10.A, 2.4.6-heading-purpose</a></li>
+		<li><a href="3structure_2heading-det.html">10.B, 1.3.1-heading-determinable</a></li>
+		<li><a href="3structure_3heading-lev.html">10.C, 2.4.6-heading-level</a></li>
+		<li><a href="3structure_4list.html">10.D, 1.3.1-list-type</a></li>
+	  </ul>
+    </div>
+  </div>
+  
+  <div class="w3-row">	
+	<div class="w3-container w3-third">
+      <h2>Links and Buttons</h2>
+      <ul style="list-style-type:none;">
+		<li><a href="4links_1link-purpose.html">6.A, 2.4.4-link-purpose</a></li>
+		<li><a href="4links_2change.html">6.B, 4.1.2-change-notify-links</a></li>
+	  </ul>
+    </div>
+	
+	<div class="w3-container w3-third">
+      <h2>Forms</h2>
+      <ul style="list-style-type:none;">
+		<li><a href="5FormsIntro.html">Forms Testing Intro</a></li>
+		<li><a href="5Forms5A.html">5.A, 3.3.2-label-provided</a></li>
+		<li><a href="5Forms5Awhat.html">"Label provided" explanation</a></li>
+		<li><a href="5Forms5B.html">5.B, 2.4.6-label-descriptive</a></li>
+		<li><a href="5Forms5C.html">5.C, 1.3.1-programmatic-label</a></li>
+		<li><a href="5Forms5D.html">5.D, 3.2.2-on-input</a></li>
+		<li><a href="5Forms5E.html">5.E, 4.1.2-change-notify-form</a></li>
+		<li><a href="5Forms5F.html">5.F, 3.3.1-error-identification</a></li>
+	  </ul>
+    </div>
+	
+	<div class="w3-container w3-third">
+      <h2>Images</h2>
+      <ul style="list-style-type:none;">
+		<li><a href="6images_1meaningful.html">7.A, 1.1.1-meaningful-image-name</a></li>
+		<li><a href="6images_2decorative.html">7.B, 1.1.1-decorative-image</a></li>
+		<li><a href="6images_3background.html">7.C, 1.1.1- decorative-background-image</a></li>
+		<li><a href="6images_4captcha.html">7.D, 1.1.1-captcha-alternative</a></li>
+		<li><a href="6images_5text.html">7.E, 1.4.5-image-of-text</a></li>
+	  </ul>
+    </div>	
+  </div>
+  
+  <div class="w3-row">	
+	<div class="w3-container w3-third">
+      <h2>Interactive Samples</h2>
+      <ul style="list-style-type:none;">
+		<li><a href="4.A_demo.html">Keyboard Access and Focus example</a></li>
+		<li><a href="4G_example.html">Keyboard Access, Trap, Focus example</a></li>
+		<li><a href="https://interactiveaccessibility.com/education/training/ex7.1.html">Keyboard Trap example (external site)</a></li>
+		<li><a href="https://www.w3.org/TR/wai-aria-practices/examples/dialog-modal/dialog.html">Modal Dialog example (external site)</a></li>
+		<li><a href="10structure_demo/structure_example.html">Structure example</a></li>
+		<li><a href="samples/6Asample.html">Links and Buttons examples</a></li>
+		<li><a href="samples/6Bsample.html">Links and Buttons examples 2</a></li>
+		<li><a href="5A-Cdemo.html">Label examples</a></li>
+		<li><a href="5D Example 2.html">Form 5.D example 1</a></li>
+		<li><a href="5D example.html">Form 5.D example 2</a></li>
+		<li><a href="5E.html">Form 5.E example</a></li>
+		<li><a href="5Forms5Fpassfail.html">Form 5.F example</a></li>
+		<li><a href="samples/ImageSamples.html">Image examples</a></li>
+	  </ul>
+    </div>
+	
+	<div class="w3-container w3-third">
+      <h2>Demo Site</h2>
+      <ul style="list-style-type:none;">
+		<li><a href="DemoPage/index.html">Demo Site main page</a></li>
+		<li><a href="DemoPage/adoption_form.html">Demo Site adoption form</a></li>
+	  </ul>
+    </div>
+	
+	<div class="w3-container w3-third">
+      <h2>Process Documents</h2>
+      <ul style="list-style-type:none;">
+		<li><a href="TTProcess_5_annotated.pdf">Annotated Trusted Tester 5.0 Process (PDF)</a></li>
+		<li><a href="Application_results_sheet_v5.0-8_drft.xlsm">Draft Results Report (Excel)</a></li>
+	  </ul>
+    </div>
+  </div>
+  
+
+<!-- Footer -->
+  <footer id="myFooter">
+    <div class="w3-container w3-theme-l2 w3-padding">
+      <p>Introduction to Trused Tester Methods<br>ICT Accessibility Testing Symposium - October 2019</p>
+	  <p><i class="fa fa-copyright" aria-label="Copyright"></i> 2019 New Editions Consulting, Inc. | <a href="https://neweditions.net">https://neweditions.net/</a></p>
+    </div>
+  </footer>
+
+</div>
+</main>
+<!-- END MAIN -->
+
+<script src="ttbasics.js"></script>
+
+</body>
+</html>

@@ -6,6 +6,11 @@ html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif;}
   bottom: 0;
   height: inherit;
 }
+@media (max-width:601px) {
+	.w3-sidebar {
+		top: 63px;
+	}
+}
 .w3-top {
 	background-color: #233692;
 	padding: 10px 0 10px 0;
