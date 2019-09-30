@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en" class="ANDI508-testPage"><head>
+<title> 5.E</title>
+<script src="http://code.jquery.com/jquery.js"></script>
+<script>
+$(document).ready(function(e) {
+	$('#signup').submit(function() {
+		$('#errors').html('');
+		if ($('#first').val() === '') {
+			$('#errors').append('<p>Please enter your first name.</p>');
+		}
+		if ($('#last').val() === '') {
+			$('#errors').append('<p>Please enter your last name.</p>');
+		} 
+		if ($('#email').val() === '') {
+			$('#errors').append('<p>Please enter your email address.</p>');
+		} 
+		return false;
+	});
+});
+</script>
+
+</head>
+<body>
+<div>
+<form name="signup" id="signup" method="post" action="">
+  <p id="errors" role="alert" aria-atomic="true"></p>
+  <p>
+    <label for="first">Student's First Name (required)</label><br>
+    <input type="text" name="first" id="first">
+  </p>
+  <p>
+    <label for="last">Student's Last Name (required)</label><br>
+    <input type="text" name="last" id="last">
+  </p>
+  <p>
+    <label for="email">Student's Email (required)</label><br>
+    <input type="text" name="email" id="email">
+  </p>
+  <p>
+    <input type="submit" name="button" id="button" value="Submit">
+  </p>
+</form>
+</div>
+
+
+</body>
+</html>
